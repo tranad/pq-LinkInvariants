@@ -3,7 +3,7 @@
 BeginPackage["DZ11xZ5`"];
 
 ComputeLinkInvariant::usage = "Main function %[u,{{braid},numStrand}]"
-<<"~/zwLI/Z11xZ5-data.m"
+<<"Z11xZ5-data.m"
 Begin["Global`"]
 DistributeDefinitions[MapTo,Inv,Mult,Conj,GetConjClass,GetCentralizer,GetRepOfConj,GetCosetReps,ConjClassReps]
 
