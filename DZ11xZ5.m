@@ -1,3 +1,8 @@
+(*
+    Compute link invariants for Z(Vec_G)
+    -Alan Tran
+*)
+
 (* ::Package:: *)
 
 BeginPackage["DZ11xZ5`"];

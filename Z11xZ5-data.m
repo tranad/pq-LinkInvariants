@@ -1,3 +1,8 @@
+(* 
+    Group data on Z11 \rtimes Z4
+    -Alan Tran
+*)
+
 (* ::Package:: *)
 
 BeginPackage["Z11xZ5data`"];
