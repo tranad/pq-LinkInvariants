@@ -10,19 +10,20 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[    553394,      14234]
-NotebookOptionsPosition[    550417,      14179]
-NotebookOutlinePosition[    550776,      14195]
-CellTagsIndexPosition[    550733,      14192]
+NotebookDataLength[    597551,      15001]
+NotebookOptionsPosition[    592215,      14912]
+NotebookOutlinePosition[    592574,      14928]
+CellTagsIndexPosition[    592531,      14925]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
 Notebook[{
 
 Cell[CellGroupData[{
-Cell["Import the packages", "Section",
- CellChangeTimes->{{3.737318984567024*^9, 
-  3.737318993435895*^9}},ExpressionUUID->"94c53f4c-b8cf-4259-b849-\
+Cell["Import packages", "Section",
+ CellChangeTimes->{{3.737318984567024*^9, 3.737318993435895*^9}, {
+  3.737341457581061*^9, 
+  3.737341457911213*^9}},ExpressionUUID->"94c53f4c-b8cf-4259-b849-\
 a1e83f07b85b"],
 
 Cell[BoxData[{
@@ -54,66 +55,56 @@ bcc49554c854"],
 
 Cell[CellGroupData[{
 
+Cell["\<\
+ComputeLinkInvariant[u, {{braid word, num strands}]
+where u \[Element] {0, 1, 2, 3, 4}, braid word is the sequential braiding \
+from bottom to top, and num strands is the number of total strands. \
+\>", "Subsection",
+ CellChangeTimes->{{3.737319314796692*^9, 3.737319329997959*^9}, {
+  3.737319958471566*^9, 3.737320076039592*^9}, {3.737341477232242*^9, 
+  3.737341509076714*^9}},ExpressionUUID->"9089d3f4-a5c7-47d0-8e49-\
+564591e6023e"],
+
+Cell[CellGroupData[{
+
 Cell[BoxData[{
  RowBox[{
-  RowBox[{"ComputeLinkInvariant", "[", 
-   RowBox[{"u", ",", " ", 
-    RowBox[{"{", 
-     RowBox[{"{", 
-      RowBox[{
-       RowBox[{"braid", " ", "word"}], ",", " ", 
-       RowBox[{"num", " ", "strands"}]}], "}"}]}]}]}], "]"}], "\n", 
- RowBox[{
   RowBox[{
-   RowBox[{
-    RowBox[{"where", " ", "u"}], "\[Element]", 
-    RowBox[{"{", 
-     RowBox[{"0", ",", "1", ",", "2", ",", "3", ",", "4"}], "}"}]}], ",", " ", 
-   RowBox[{
-   "braid", " ", "word", " ", "is", " ", "the", " ", "sequential", " ", 
-    "braiding", " ", "from", " ", "bottom", " ", "to", " ", "top"}], ",", 
-   RowBox[{
-   "and", " ", "num", " ", "strands", " ", "is", " ", "the", " ", "number", 
-    " ", "of", " ", "total", " ", 
+   RowBox[{"E", ".", "g", ".", " ", "Hopf"}], " ", "link", " ", "is", " ", 
+   FormBox[
+    SuperscriptBox[
+     SubscriptBox["\[Sigma]", "1"], "2"],
+    TraditionalForm], " ", "which", " ", "is", " ", 
+   RowBox[{"{", 
+    RowBox[{"1", ",", "1"}], "}"}], " ", "and", " ", "the", " ", "braidword", 
+   " ", 
+   RowBox[{"(", 
     RowBox[{
-    "strands", ".", " ", "\[IndentingNewLine]", "\[IndentingNewLine]", "E", 
-     ".", "g", ".", " ", "Hopf"}], " ", "link", " ", "is", " ", 
-    FormBox[
-     RowBox[{
-      SuperscriptBox["\[Sigma]", "1"], 
-      SuperscriptBox["\[Sigma]", "1"]}],
-     TraditionalForm], " ", "which", " ", "is", " ", 
-    RowBox[{"{", 
-     RowBox[{"1", ",", "1"}], "}"}], " ", "and", " ", "the", " ", "braidword",
-     " ", 
-    RowBox[{"(", 
-     RowBox[{
-      SuperscriptBox[
-       SubscriptBox["\[Sigma]", "2"], 
-       RowBox[{"-", "3"}]], 
-      SuperscriptBox[
-       SubscriptBox["\[Sigma]", "1"], 
-       RowBox[{"-", "1"}]], 
-      SuperscriptBox[
-       SubscriptBox["\[Sigma]", "2"], "2"]}], ")"}], " ", "on", " ", "3", " ",
-     "strands", " ", "would", " ", "be", " ", "inputed", " ", "as"}]}], 
+     SuperscriptBox[
+      SubscriptBox["\[Sigma]", "2"], 
+      RowBox[{"-", "3"}]], 
+     SuperscriptBox[
+      SubscriptBox["\[Sigma]", "1"], 
+      RowBox[{"-", "1"}]], 
+     SuperscriptBox[
+      SubscriptBox["\[Sigma]", "2"], "2"]}], ")"}], " ", "on", " ", "3", " ", 
+   "strands", " ", "would", " ", "be", " ", "inputed", " ", "as"}], 
   " "}], "\[IndentingNewLine]", 
- RowBox[{
-  RowBox[{"ComputeLinkInvariant", "[", 
-   RowBox[{"u", ",", 
-    RowBox[{"{", 
-     RowBox[{
-      RowBox[{"{", 
-       RowBox[{"2", ",", "2", ",", 
-        RowBox[{"-", "1"}], ",", 
-        RowBox[{"-", "2"}], ",", 
-        RowBox[{"-", "2"}], ",", 
-        RowBox[{"-", "2"}]}], "}"}], ",", " ", "3"}], "}"}]}], "]"}], 
-  " "}]}], "Subsubsection",
- CellChangeTimes->{{3.737319314796692*^9, 3.737319329997959*^9}, {
-  3.737319958471566*^9, 
-  3.737320076039592*^9}},ExpressionUUID->"9089d3f4-a5c7-47d0-8e49-\
-564591e6023e"],
+ RowBox[{"ComputeLinkInvariant", "[", 
+  RowBox[{"u", ",", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"2", ",", "2", ",", 
+       RowBox[{"-", "1"}], ",", 
+       RowBox[{"-", "2"}], ",", 
+       RowBox[{"-", "2"}], ",", 
+       RowBox[{"-", "2"}]}], "}"}], ",", " ", "3"}], "}"}]}], 
+  "]"}]}], "Subsubsection",
+ CellChangeTimes->{
+  3.7373415242998447`*^9, {3.737342371307225*^9, 
+   3.737342382130658*^9}},ExpressionUUID->"85452a25-fa8b-40cf-ab17-\
+7a9a95c944ea"],
 
 Cell[CellGroupData[{
 
@@ -142,19 +133,18 @@ Cell[BoxData[{
 
 Cell[BoxData[
  FormBox["1", TraditionalForm]], "Output",
- CellChangeTimes->{{3.737318070494955*^9, 3.737318097933025*^9}, 
-   3.737319664258998*^9},ExpressionUUID->"1a234364-4bed-4677-b3c6-\
-42f0263e74eb"],
+ CellChangeTimes->{
+  3.737342139600296*^9},ExpressionUUID->"5aabfd39-bd2b-4b91-ab8c-\
+875aee6edfbe"],
 
 Cell[CellGroupData[{
 
 Cell[BoxData[
  FormBox["\<\"+++++-----+++++-----+++++-----+++++-----+++++-----+++++\"\>", 
   TraditionalForm]], "Print",
- CellChangeTimes->{3.737318021015975*^9, 3.7373180651253767`*^9, 
-  3.737318095708354*^9, 
-  3.737319664267611*^9},ExpressionUUID->"e9b7bf1a-a36c-4a9c-a04d-\
-b833eb7ff3e3"],
+ CellChangeTimes->{
+  3.7373421396117487`*^9},ExpressionUUID->"171c93d6-eb30-4467-89e7-\
+a8be8565e51b"],
 
 Cell[BoxData[
  FormBox[
@@ -167,10 +157,9 @@ Cell[BoxData[
     "\[InvisibleSpace]", "\<\".\"\>"}],
    SequenceForm["Computing braid = ", {{1}, 2}, " for u=", 1, "."],
    Editable->False], TraditionalForm]], "Print",
- CellChangeTimes->{3.737318021015975*^9, 3.7373180651253767`*^9, 
-  3.737318095708354*^9, 
-  3.7373196642732067`*^9},ExpressionUUID->"d1d46996-7838-43cb-94d1-\
-d203f845faeb"],
+ CellChangeTimes->{
+  3.737342139622087*^9},ExpressionUUID->"55975061-8b14-4d2e-a36d-\
+58da6906ac90"],
 
 Cell[BoxData[
  FormBox[
@@ -182,10 +171,9 @@ Cell[BoxData[
      "}"}]}],
    SequenceForm["For conjugacy classes (reps): ", {1, 3, 6, 2, 4, 7, 11}],
    Editable->False], TraditionalForm]], "Print",
- CellChangeTimes->{3.737318021015975*^9, 3.7373180651253767`*^9, 
-  3.737318095708354*^9, 
-  3.737319664284462*^9},ExpressionUUID->"03941885-9a8f-4dda-9887-\
-9b89aa2c034f"],
+ CellChangeTimes->{
+  3.737342139634317*^9},ExpressionUUID->"81aacb33-b8c8-4e47-94e2-\
+01cfb75c8245"],
 
 Cell[BoxData[
  FormBox[
@@ -199,68 +187,19 @@ Cell[BoxData[
    SequenceForm[
    "and for projective irreps: ", 0, " to ", {6, 10, 10, 4, 4, 4, 4}, "."],
    Editable->False], TraditionalForm]], "Print",
- CellChangeTimes->{3.737318021015975*^9, 3.7373180651253767`*^9, 
-  3.737318095708354*^9, 
-  3.7373196643002977`*^9},ExpressionUUID->"e19c8ab0-48a8-4ab7-b550-\
-8e773fec2ec8"],
+ CellChangeTimes->{
+  3.737342139646779*^9},ExpressionUUID->"3a33e32d-8bda-4e99-9dbd-\
+595fab5a84db"],
 
 Cell[BoxData[
  FormBox[
   InterpretationBox[
    RowBox[{"\<\"Using kernels: \"\>", "\[InvisibleSpace]", 
-    RowBox[{"{", 
-     RowBox[{
-      FormBox[
-       RowBox[{"\<\"KernelObject\"\>", "(", 
-        RowBox[{"1", ",", "\<\"local\"\>"}], ")"}],
-       TraditionalForm], ",", 
-      FormBox[
-       RowBox[{"\<\"KernelObject\"\>", "(", 
-        RowBox[{"2", ",", "\<\"local\"\>"}], ")"}],
-       TraditionalForm]}], "}"}]}],
-   SequenceForm["Using kernels: ", {
-     Parallel`Kernels`kernel[
-      Parallel`Kernels`Private`bk[
-       SubKernels`LocalKernels`localKernel[
-        SubKernels`LocalKernels`Private`lk[
-         LinkObject[
-         "'/Applications/Mathematica.app/Contents/MacOS/WolframKernel' \
--subkernel -noinit -nopaclet -wstp", 88966, 11], {
-         "'/Applications/Mathematica.app/Contents/MacOS/WolframKernel' \
--subkernel -noinit -nopaclet -wstp", SubKernels`LocalKernels`LowerPriority -> 
-          True}, SubKernels`LocalKernels`Private`speed$128656, 
-         SubKernels`LocalKernels`Private`preemptive$128656]], 
-       Parallel`Kernels`Private`id$128661, 
-       Parallel`Kernels`Private`name$128661], 
-      Parallel`Kernels`Private`ek[
-      Parallel`Kernels`Private`nev$128662, Parallel`Kernels`Private`pb$128662,
-        Parallel`Kernels`Private`rd$128662], 
-      Parallel`Kernels`Private`sk[
-      Parallel`Kernels`Private`q$128663, Parallel`Kernels`Private`n0$128663, 
-       Parallel`Kernels`Private`n1$128663]], 
-     Parallel`Kernels`kernel[
-      Parallel`Kernels`Private`bk[
-       SubKernels`LocalKernels`localKernel[
-        SubKernels`LocalKernels`Private`lk[
-         LinkObject[
-         "'/Applications/Mathematica.app/Contents/MacOS/WolframKernel' \
--subkernel -noinit -nopaclet -wstp", 88967, 12], {
-         "'/Applications/Mathematica.app/Contents/MacOS/WolframKernel' \
--subkernel -noinit -nopaclet -wstp", SubKernels`LocalKernels`LowerPriority -> 
-          True}, SubKernels`LocalKernels`Private`speed$128657, 
-         SubKernels`LocalKernels`Private`preemptive$128657]], 
-       Parallel`Kernels`Private`id$128665, 
-       Parallel`Kernels`Private`name$128665], 
-      Parallel`Kernels`Private`ek[
-      Parallel`Kernels`Private`nev$128666, Parallel`Kernels`Private`pb$128666,
-        Parallel`Kernels`Private`rd$128666], 
-      Parallel`Kernels`Private`sk[
-      Parallel`Kernels`Private`q$128667, Parallel`Kernels`Private`n0$128667, 
-       Parallel`Kernels`Private`n1$128667]]}],
+    RowBox[{"{", "}"}]}],
+   SequenceForm["Using kernels: ", {}],
    Editable->False], TraditionalForm]], "Print",
- CellChangeTimes->{3.737318021015975*^9, 3.7373180651253767`*^9, 
-  3.737318095708354*^9, 
-  3.73731966431677*^9},ExpressionUUID->"800dd4c5-9091-4ff9-9c1f-886130d628c9"],
+ CellChangeTimes->{
+  3.73734213965989*^9},ExpressionUUID->"b90b15a1-f1e2-4fe5-a82c-b2e05fe2f974"],
 
 Cell[BoxData[
  FormBox[
@@ -270,26 +209,25 @@ Cell[BoxData[
     "\[InvisibleSpace]", "2"}],
    SequenceForm["Number of link components/number of strands: ", 1, "/", 2],
    Editable->False], TraditionalForm]], "Print",
- CellChangeTimes->{3.737318021015975*^9, 3.7373180651253767`*^9, 
-  3.737318095708354*^9, 
-  3.7373196643310204`*^9},ExpressionUUID->"958007b3-f3ee-4760-af9b-\
-148f096e81e5"],
+ CellChangeTimes->{
+  3.737342139672777*^9},ExpressionUUID->"bda0d4dd-ded5-47cd-856e-\
+d752030e5ca5"],
 
 Cell[BoxData[
  FormBox[
   InterpretationBox[
-   RowBox[{"\<\"Elapsed time: \"\>", "\[InvisibleSpace]", "2.318178`", 
-    "\[InvisibleSpace]", "\<\"s = \"\>", "\[InvisibleSpace]", "0.0386363`", 
-    "\[InvisibleSpace]", "\<\"min = \"\>", "\[InvisibleSpace]", 
-    "0.0006439383333333333`", "\[InvisibleSpace]", "\<\"hr.\"\>"}],
+   RowBox[{"\<\"Elapsed time: \"\>", "\[InvisibleSpace]", "2.438552`", 
+    "\[InvisibleSpace]", "\<\"s = \"\>", "\[InvisibleSpace]", 
+    "0.040642533333333335`", "\[InvisibleSpace]", "\<\"min = \"\>", 
+    "\[InvisibleSpace]", "0.0006773755555555556`", 
+    "\[InvisibleSpace]", "\<\"hr.\"\>"}],
    SequenceForm[
-   "Elapsed time: ", 2.318178, "s = ", 0.0386363, "min = ", 
-    0.0006439383333333333, "hr."],
+   "Elapsed time: ", 2.438552, "s = ", 0.040642533333333335`, "min = ", 
+    0.0006773755555555556, "hr."],
    Editable->False], TraditionalForm]], "Print",
- CellChangeTimes->{3.737318021015975*^9, 3.7373180651253767`*^9, 
-  3.737318095708354*^9, 
-  3.737319666591268*^9},ExpressionUUID->"81188514-26f1-4550-a25d-\
-0445ee10f19c"]
+ CellChangeTimes->{
+  3.737342143916247*^9},ExpressionUUID->"0012e713-1fec-4e92-b47d-\
+f373e7ae57a2"]
 }, Open  ]],
 
 Cell[BoxData[
@@ -480,19 +418,18 @@ Cell[BoxData[
        FractionBox[
         RowBox[{"8", " ", "\[ImaginaryI]", " ", "\[Pi]"}], "25"]}]]}]}], 
    "}"}], TraditionalForm]], "Output",
- CellChangeTimes->{{3.737318070494955*^9, 3.737318097933025*^9}, 
-   3.7373196666411247`*^9},ExpressionUUID->"b5d94ddb-1f36-41eb-91bd-\
-0b4b3ab4a217"],
+ CellChangeTimes->{
+  3.7373421439685373`*^9},ExpressionUUID->"f3c12e7b-92d0-4ae0-97bd-\
+49cfaba552ec"],
 
 Cell[CellGroupData[{
 
 Cell[BoxData[
  FormBox["\<\"+++++-----+++++-----+++++-----+++++-----+++++-----+++++\"\>", 
   TraditionalForm]], "Print",
- CellChangeTimes->{3.737318021015975*^9, 3.7373180651253767`*^9, 
-  3.737318095708354*^9, 
-  3.737319666651197*^9},ExpressionUUID->"5ef7e999-c220-4474-b52a-\
-1d77a870d0a3"],
+ CellChangeTimes->{
+  3.7373421439777117`*^9},ExpressionUUID->"d5fd484c-a87d-4a2b-9ab2-\
+adc22a11be10"],
 
 Cell[BoxData[
  FormBox[
@@ -506,10 +443,9 @@ Cell[BoxData[
     "\[InvisibleSpace]", "\<\".\"\>"}],
    SequenceForm["Computing braid = ", {{1, 1}, 2}, " for u=", 1, "."],
    Editable->False], TraditionalForm]], "Print",
- CellChangeTimes->{3.737318021015975*^9, 3.7373180651253767`*^9, 
-  3.737318095708354*^9, 
-  3.737319666657963*^9},ExpressionUUID->"b014d530-12ba-4173-9c38-\
-7c807d3d98fa"],
+ CellChangeTimes->{
+  3.7373421439852257`*^9},ExpressionUUID->"aaa84dd3-ffcd-4e7d-9f31-\
+60c63c730aa9"],
 
 Cell[BoxData[
  FormBox[
@@ -521,10 +457,9 @@ Cell[BoxData[
      "}"}]}],
    SequenceForm["For conjugacy classes (reps): ", {1, 3, 6, 2, 4, 7, 11}],
    Editable->False], TraditionalForm]], "Print",
- CellChangeTimes->{3.737318021015975*^9, 3.7373180651253767`*^9, 
-  3.737318095708354*^9, 
-  3.737319666668559*^9},ExpressionUUID->"c4cf8039-f053-4256-8868-\
-30847067492e"],
+ CellChangeTimes->{
+  3.737342143995356*^9},ExpressionUUID->"fcdec7ac-4dfd-4490-8f28-\
+ae245ebccd8c"],
 
 Cell[BoxData[
  FormBox[
@@ -538,10 +473,9 @@ Cell[BoxData[
    SequenceForm[
    "and for projective irreps: ", 0, " to ", {6, 10, 10, 4, 4, 4, 4}, "."],
    Editable->False], TraditionalForm]], "Print",
- CellChangeTimes->{3.737318021015975*^9, 3.7373180651253767`*^9, 
-  3.737318095708354*^9, 
-  3.737319666679798*^9},ExpressionUUID->"4d6ff591-56a8-4fbd-a42a-\
-7e9b8562d3f4"],
+ CellChangeTimes->{
+  3.737342144007903*^9},ExpressionUUID->"5a2b996c-084c-433a-972f-\
+1f6f308e2007"],
 
 Cell[BoxData[
  FormBox[
@@ -564,42 +498,42 @@ Cell[BoxData[
         SubKernels`LocalKernels`Private`lk[
          LinkObject[
          "'/Applications/Mathematica.app/Contents/MacOS/WolframKernel' \
--subkernel -noinit -nopaclet -wstp", 88966, 11], {
+-subkernel -noinit -nopaclet -wstp", 259, 10], {
          "'/Applications/Mathematica.app/Contents/MacOS/WolframKernel' \
 -subkernel -noinit -nopaclet -wstp", SubKernels`LocalKernels`LowerPriority -> 
-          True}, SubKernels`LocalKernels`Private`speed$128656, 
-         SubKernels`LocalKernels`Private`preemptive$128656]], 
-       Parallel`Kernels`Private`id$128661, 
-       Parallel`Kernels`Private`name$128661], 
+          True}, SubKernels`LocalKernels`Private`speed$3087, 
+         SubKernels`LocalKernels`Private`preemptive$3087]], 
+       Parallel`Kernels`Private`id$3094, Parallel`Kernels`Private`name$3094], 
+      
       Parallel`Kernels`Private`ek[
-      Parallel`Kernels`Private`nev$128662, Parallel`Kernels`Private`pb$128662,
-        Parallel`Kernels`Private`rd$128662], 
+      Parallel`Kernels`Private`nev$3095, Parallel`Kernels`Private`pb$3095, 
+       Parallel`Kernels`Private`rd$3095], 
       Parallel`Kernels`Private`sk[
-      Parallel`Kernels`Private`q$128663, Parallel`Kernels`Private`n0$128663, 
-       Parallel`Kernels`Private`n1$128663]], 
+      Parallel`Kernels`Private`q$3096, Parallel`Kernels`Private`n0$3096, 
+       Parallel`Kernels`Private`n1$3096]], 
      Parallel`Kernels`kernel[
       Parallel`Kernels`Private`bk[
        SubKernels`LocalKernels`localKernel[
         SubKernels`LocalKernels`Private`lk[
          LinkObject[
          "'/Applications/Mathematica.app/Contents/MacOS/WolframKernel' \
--subkernel -noinit -nopaclet -wstp", 88967, 12], {
+-subkernel -noinit -nopaclet -wstp", 260, 11], {
          "'/Applications/Mathematica.app/Contents/MacOS/WolframKernel' \
 -subkernel -noinit -nopaclet -wstp", SubKernels`LocalKernels`LowerPriority -> 
-          True}, SubKernels`LocalKernels`Private`speed$128657, 
-         SubKernels`LocalKernels`Private`preemptive$128657]], 
-       Parallel`Kernels`Private`id$128665, 
-       Parallel`Kernels`Private`name$128665], 
+          True}, SubKernels`LocalKernels`Private`speed$3088, 
+         SubKernels`LocalKernels`Private`preemptive$3088]], 
+       Parallel`Kernels`Private`id$3098, Parallel`Kernels`Private`name$3098], 
+      
       Parallel`Kernels`Private`ek[
-      Parallel`Kernels`Private`nev$128666, Parallel`Kernels`Private`pb$128666,
-        Parallel`Kernels`Private`rd$128666], 
+      Parallel`Kernels`Private`nev$3099, Parallel`Kernels`Private`pb$3099, 
+       Parallel`Kernels`Private`rd$3099], 
       Parallel`Kernels`Private`sk[
-      Parallel`Kernels`Private`q$128667, Parallel`Kernels`Private`n0$128667, 
-       Parallel`Kernels`Private`n1$128667]]}],
+      Parallel`Kernels`Private`q$3100, Parallel`Kernels`Private`n0$3100, 
+       Parallel`Kernels`Private`n1$3100]]}],
    Editable->False], TraditionalForm]], "Print",
- CellChangeTimes->{3.737318021015975*^9, 3.7373180651253767`*^9, 
-  3.737318095708354*^9, 
-  3.7373196666896*^9},ExpressionUUID->"9d73bcb2-6f67-42f1-8bea-cd037eebfa2f"],
+ CellChangeTimes->{
+  3.737342144016758*^9},ExpressionUUID->"64731764-9e2e-46a7-a9ab-\
+6eb6c062373e"],
 
 Cell[BoxData[
  FormBox[
@@ -609,9 +543,9 @@ Cell[BoxData[
     "\[InvisibleSpace]", "2"}],
    SequenceForm["Number of link components/number of strands: ", 2, "/", 2],
    Editable->False], TraditionalForm]], "Print",
- CellChangeTimes->{3.737318021015975*^9, 3.7373180651253767`*^9, 
-  3.737318095708354*^9, 
-  3.73731966669981*^9},ExpressionUUID->"750d85e3-1ec3-40e9-9234-68a32b5fcb78"],
+ CellChangeTimes->{
+  3.737342144025297*^9},ExpressionUUID->"e8a424af-3f84-4e26-93e6-\
+3a2fbcefa8ba"],
 
 Cell[BoxData[
  FormBox[
@@ -621,27 +555,24 @@ Cell[BoxData[
     "\[InvisibleSpace]", "\<\" matrix\"\>"}],
    SequenceForm["Reshape to ", 49, "x", 49, " matrix"],
    Editable->False], TraditionalForm]], "Print",
- CellChangeTimes->{3.737318021015975*^9, 3.7373180651253767`*^9, 
-  3.737318095708354*^9, 
-  3.7373196669427423`*^9},ExpressionUUID->"a4c57bf6-c5b7-42ce-882b-\
-2ce94621c367"],
+ CellChangeTimes->{
+  3.73734214427868*^9},ExpressionUUID->"d9d032ad-2ddf-4b1c-9bca-2f998b06a466"],
 
 Cell[BoxData[
  FormBox[
   InterpretationBox[
-   RowBox[{"\<\"Elapsed time: \"\>", "\[InvisibleSpace]", "177.067261`", 
+   RowBox[{"\<\"Elapsed time: \"\>", "\[InvisibleSpace]", "160.872874`", 
     "\[InvisibleSpace]", "\<\"s = \"\>", "\[InvisibleSpace]", 
-    "2.951121016666667`", "\[InvisibleSpace]", "\<\"min = \"\>", 
-    "\[InvisibleSpace]", "0.04918535027777778`", 
+    "2.6812145666666667`", "\[InvisibleSpace]", "\<\"min = \"\>", 
+    "\[InvisibleSpace]", "0.04468690944444444`", 
     "\[InvisibleSpace]", "\<\"hr.\"\>"}],
    SequenceForm[
-   "Elapsed time: ", 177.067261, "s = ", 2.951121016666667, "min = ", 
-    0.04918535027777778, "hr."],
+   "Elapsed time: ", 160.872874, "s = ", 2.6812145666666667`, "min = ", 
+    0.04468690944444444, "hr."],
    Editable->False], TraditionalForm]], "Print",
- CellChangeTimes->{3.737318021015975*^9, 3.7373180651253767`*^9, 
-  3.737318095708354*^9, 
-  3.737319844014984*^9},ExpressionUUID->"a53971d3-11e0-43ed-98ae-\
-d1045c622a6f"]
+ CellChangeTimes->{
+  3.737342305154212*^9},ExpressionUUID->"dbc863cf-857f-4e67-8b92-\
+53a9f6783291"]
 }, Open  ]],
 
 Cell[BoxData[
@@ -14059,9 +13990,10 @@ Cell[BoxData[
          Offset[0.4]}, 
         Offset[0.2]}, "RowsIndexed" -> {}}], "\[NoBreak]", ")"}], 
   TraditionalForm]], "Output",
- CellChangeTimes->{{3.737318070494955*^9, 3.737318097933025*^9}, 
-   3.737319844436594*^9},ExpressionUUID->"2950d390-cd37-4158-8d19-\
-3c8eca5c39c3"]
+ CellChangeTimes->{
+  3.737342305560315*^9},ExpressionUUID->"20f6105b-7041-49eb-8dd8-\
+b112e792008c"]
+}, Open  ]]
 }, Open  ]]
 }, Open  ]],
 
@@ -14078,13 +14010,11 @@ Cell[TextData[{
      SubscriptBox[
       RowBox[{"(", 
        SuperscriptBox["s1", "*"], ")"}], "ab"]}]}], TraditionalForm]],
-  FormatType->"TraditionalForm",ExpressionUUID->
-  "d36b5b5c-67df-4d8f-952e-9d8cca373239"],
+  ExpressionUUID->"d36b5b5c-67df-4d8f-952e-9d8cca373239"],
  " and ",
  Cell[BoxData[
   FormBox[
-   SubscriptBox["T", "ab"], TraditionalForm]],
-  FormatType->"TraditionalForm",ExpressionUUID->
+   SubscriptBox["T", "ab"], TraditionalForm]],ExpressionUUID->
   "15d8e487-1624-4dbc-aa13-c3a74cfa13b0"],
  " = ",
  Cell[BoxData[
@@ -14092,88 +14022,891 @@ Cell[TextData[{
    RowBox[{
     FractionBox[
      SubscriptBox["t1", "ab"], 
-     RowBox[{"|", 
-      SubscriptBox["t1", "ab"], "|"}]], 
-    SubscriptBox["\[Delta]", "ab"]}], TraditionalForm]],
-  FormatType->"TraditionalForm",ExpressionUUID->
+     SubscriptBox["d", "a"]], 
+    SubscriptBox["\[Delta]", "ab"]}], TraditionalForm]],ExpressionUUID->
   "62d1d839-bb64-45b3-8bce-919235696021"],
  "\nand we can check that they satisfy the modular relations"
 }], "Subsection",
  CellChangeTimes->{{3.7373190399571543`*^9, 3.737319084061653*^9}, {
-  3.737319379468953*^9, 
-  3.737319488066135*^9}},ExpressionUUID->"020285bf-c435-4e30-a678-\
+  3.737319379468953*^9, 3.737319488066135*^9}, {3.73734230272544*^9, 
+  3.737342309655674*^9}},ExpressionUUID->"020285bf-c435-4e30-a678-\
 69c43046a264"],
 
 Cell[CellGroupData[{
 
 Cell[BoxData[
- RowBox[{
-  RowBox[{"(*", 
+ RowBox[{"Module", "[", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{"S", ",", "T"}], "}"}], ",", "\[IndentingNewLine]", 
    RowBox[{
-    RowBox[{"//", 
+    RowBox[{"S", "=", 
      RowBox[{
-     "N", " ", "converts", " ", "the", " ", "expression", " ", "into", " ", 
-      "a", " ", "complex", " ", "number", " ", "which", " ", "hastens", " ", 
-      "the", " ", "computation"}]}], ",", " ", 
-    RowBox[{
-    "otherwise", " ", "Mathematica", " ", "attempts", " ", "to", " ", 
-     "algebraically", " ", 
-     RowBox[{"simplify", ".", " ", "Chop"}], " ", "replaces", " ", "values", 
-     " ", "close", " ", "to", " ", "0", " ", 
-     RowBox[{"(", 
-      RowBox[{"tolerance", " ", "of", " ", 
-       SuperscriptBox["10", 
-        RowBox[{"-", "10"}]]}], ")"}], " ", "with", " ", "exactly", " ", 
-     "0"}]}], "*)"}], "\[IndentingNewLine]", 
-  RowBox[{"Module", "[", 
-   RowBox[{
-    RowBox[{"{", 
-     RowBox[{"S", ",", "T"}], "}"}], ",", "\[IndentingNewLine]", 
-    RowBox[{
-     RowBox[{"S", "=", 
       RowBox[{
+       RowBox[{"Conjugate", "[", "s1", "]"}], "/", "55"}], "//", "N"}]}], ";",
+     "\[IndentingNewLine]", 
+    RowBox[{"T", "=", 
+     RowBox[{
+      RowBox[{"DiagonalMatrix", "[", 
        RowBox[{
-        RowBox[{"Conjugate", "[", "s1", "]"}], "/", "55"}], "//", "N"}]}], 
-     ";", "\[IndentingNewLine]", 
-     RowBox[{"T", "=", 
-      RowBox[{
-       RowBox[{"DiagonalMatrix", "[", 
         RowBox[{
-         RowBox[{
-          RowBox[{"#", "/", 
-           RowBox[{"Abs", "[", "#", "]"}]}], "&"}], "/@", "t1"}], "]"}], "//",
-        "N"}]}], ";", "\[IndentingNewLine]", 
-     RowBox[{"{", 
+         RowBox[{"#", "/", 
+          RowBox[{"Abs", "[", "#", "]"}]}], "&"}], "/@", "t1"}], "]"}], "//", 
+      "N"}]}], ";", "\[IndentingNewLine]", 
+    RowBox[{"{", 
+     RowBox[{
       RowBox[{
-       RowBox[{
-        RowBox[{"Chop", "[", 
-         RowBox[{"S", ".", "S", ".", "S", ".", "S"}], "]"}], "==", " ", 
-        RowBox[{"IdentityMatrix", "[", "49", "]"}]}], ",", 
-       RowBox[{
-        RowBox[{"Chop", "[", 
-         RowBox[{"S", ".", "T", ".", "S", ".", "T", ".", "S", ".", "T"}], 
-         "]"}], "==", 
-        RowBox[{"Chop", "[", 
-         RowBox[{"S", ".", "S"}], "]"}]}]}], "}"}]}]}], "]"}]}]], "Input",
+       RowBox[{"Chop", "[", 
+        RowBox[{"S", ".", "S", ".", "S", ".", "S"}], "]"}], "==", " ", 
+       RowBox[{"IdentityMatrix", "[", "49", "]"}]}], ",", 
+      RowBox[{
+       RowBox[{"Chop", "[", 
+        RowBox[{"S", ".", "T", ".", "S", ".", "T", ".", "S", ".", "T"}], 
+        "]"}], "==", 
+       RowBox[{"Chop", "[", 
+        RowBox[{"S", ".", "S"}], "]"}]}]}], "}"}]}]}], "]"}]], "Input",
  CellChangeTimes->{{3.737318312970621*^9, 3.737318503136898*^9}, {
    3.737318544190982*^9, 3.737318604981538*^9}, {3.737318644247699*^9, 
    3.737318672199486*^9}, 3.737318785483522*^9, {3.737318914115697*^9, 
    3.737318970773374*^9}, {3.73731935311819*^9, 3.7373193771108*^9}, {
-   3.737319489758728*^9, 
-   3.737319638862424*^9}},ExpressionUUID->"6fcc254c-7ef1-4d74-a408-\
+   3.737319489758728*^9, 3.737319638862424*^9}, {3.737340195294536*^9, 
+   3.737340212491352*^9}, {3.737340385620368*^9, 3.737340457865389*^9}, {
+   3.737340494372601*^9, 3.7373405570246353`*^9}, {3.737340599674322*^9, 
+   3.737340606631452*^9}, {3.7373414405866957`*^9, 3.737341444834496*^9}, {
+   3.7373415794217453`*^9, 3.737341580264454*^9}, 3.737341647933614*^9, {
+   3.737342323144454*^9, 
+   3.73734232395006*^9}},ExpressionUUID->"6fcc254c-7ef1-4d74-a408-\
 13a01bc1b050"],
 
 Cell[BoxData[
  FormBox[
   RowBox[{"{", 
    RowBox[{"True", ",", "True"}], "}"}], TraditionalForm]], "Output",
- CellChangeTimes->{{3.737318344486212*^9, 3.737318422091858*^9}, {
-  3.7373184685921087`*^9, 3.7373184870017567`*^9}, {3.737318541653336*^9, 
-  3.737318570348256*^9}, {3.73731863831986*^9, 3.7373186859883757`*^9}, {
-  3.737318907189925*^9, 3.73731897150593*^9}, {3.737319871283865*^9, 
-  3.737319873657299*^9}},ExpressionUUID->"a05077bc-2f16-45a2-8d36-\
-01c1792cb36b"]
+ CellChangeTimes->{
+  3.737342324489663*^9},ExpressionUUID->"dffc36eb-7157-4775-b88d-\
+a94173b58db0"]
 }, Open  ]]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Compute two unknots for u=3 and u=4.", "Section",
+ CellChangeTimes->{{3.737341596121586*^9, 3.737341616706792*^9}, {
+  3.737341719815219*^9, 
+  3.737341722072114*^9}},ExpressionUUID->"cc4fc35b-400c-4386-ad61-\
+bb0832e6efb4"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"dd", "=", 
+  RowBox[{"ComputeLinkInvariant", "[", 
+   RowBox[{"3", ",", 
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"{", 
+       RowBox[{"1", ",", 
+        RowBox[{"-", "1"}]}], "}"}], ",", "2"}], "}"}]}], "]"}]}]], "Input",
+ CellChangeTimes->{{3.73734134219722*^9, 3.73734135454632*^9}, {
+   3.7373417006317587`*^9, 3.737341713448063*^9}, 
+   3.737341750713632*^9},ExpressionUUID->"579e2f9f-7e01-451c-a14e-\
+130a16dfdf61"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ FormBox["\<\"+++++-----+++++-----+++++-----+++++-----+++++-----+++++\"\>", 
+  TraditionalForm]], "Print",
+ CellChangeTimes->{
+  3.737342342265172*^9},ExpressionUUID->"ad952508-cc47-4c50-9600-\
+2cd3c140b90f"],
+
+Cell[BoxData[
+ FormBox[
+  InterpretationBox[
+   RowBox[{"\<\"Computing braid = \"\>", "\[InvisibleSpace]", 
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"{", 
+       RowBox[{"1", ",", 
+        RowBox[{"-", "1"}]}], "}"}], ",", "2"}], "}"}], 
+    "\[InvisibleSpace]", "\<\" for u=\"\>", "\[InvisibleSpace]", "3", 
+    "\[InvisibleSpace]", "\<\".\"\>"}],
+   SequenceForm["Computing braid = ", {{1, -1}, 2}, " for u=", 3, "."],
+   Editable->False], TraditionalForm]], "Print",
+ CellChangeTimes->{
+  3.737342342277103*^9},ExpressionUUID->"40f3a8ec-97f2-4feb-a0cf-\
+8bfa1b5a5207"],
+
+Cell[BoxData[
+ FormBox[
+  InterpretationBox[
+   RowBox[{"\<\"For conjugacy classes (reps): \"\>", "\[InvisibleSpace]", 
+    RowBox[{"{", 
+     RowBox[{
+     "1", ",", "3", ",", "6", ",", "2", ",", "4", ",", "7", ",", "11"}], 
+     "}"}]}],
+   SequenceForm["For conjugacy classes (reps): ", {1, 3, 6, 2, 4, 7, 11}],
+   Editable->False], TraditionalForm]], "Print",
+ CellChangeTimes->{
+  3.737342342291078*^9},ExpressionUUID->"a0382868-724b-4b16-a59c-\
+b2efa16ac52c"],
+
+Cell[BoxData[
+ FormBox[
+  InterpretationBox[
+   RowBox[{"\<\"and for projective irreps: \"\>", "\[InvisibleSpace]", "0", 
+    "\[InvisibleSpace]", "\<\" to \"\>", "\[InvisibleSpace]", 
+    RowBox[{"{", 
+     RowBox[{
+     "6", ",", "10", ",", "10", ",", "4", ",", "4", ",", "4", ",", "4"}], 
+     "}"}], "\[InvisibleSpace]", "\<\".\"\>"}],
+   SequenceForm[
+   "and for projective irreps: ", 0, " to ", {6, 10, 10, 4, 4, 4, 4}, "."],
+   Editable->False], TraditionalForm]], "Print",
+ CellChangeTimes->{
+  3.737342342307469*^9},ExpressionUUID->"1df56af9-8674-422d-b29a-\
+589f6c979ed3"],
+
+Cell[BoxData[
+ FormBox[
+  InterpretationBox[
+   RowBox[{"\<\"Using kernels: \"\>", "\[InvisibleSpace]", 
+    RowBox[{"{", 
+     RowBox[{
+      FormBox[
+       RowBox[{"\<\"KernelObject\"\>", "(", 
+        RowBox[{"1", ",", "\<\"local\"\>"}], ")"}],
+       TraditionalForm], ",", 
+      FormBox[
+       RowBox[{"\<\"KernelObject\"\>", "(", 
+        RowBox[{"2", ",", "\<\"local\"\>"}], ")"}],
+       TraditionalForm]}], "}"}]}],
+   SequenceForm["Using kernels: ", {
+     Parallel`Kernels`kernel[
+      Parallel`Kernels`Private`bk[
+       SubKernels`LocalKernels`localKernel[
+        SubKernels`LocalKernels`Private`lk[
+         LinkObject[
+         "'/Applications/Mathematica.app/Contents/MacOS/WolframKernel' \
+-subkernel -noinit -nopaclet -wstp", 259, 10], {
+         "'/Applications/Mathematica.app/Contents/MacOS/WolframKernel' \
+-subkernel -noinit -nopaclet -wstp", SubKernels`LocalKernels`LowerPriority -> 
+          True}, SubKernels`LocalKernels`Private`speed$3087, 
+         SubKernels`LocalKernels`Private`preemptive$3087]], 
+       Parallel`Kernels`Private`id$3094, Parallel`Kernels`Private`name$3094], 
+      
+      Parallel`Kernels`Private`ek[
+      Parallel`Kernels`Private`nev$3095, Parallel`Kernels`Private`pb$3095, 
+       Parallel`Kernels`Private`rd$3095], 
+      Parallel`Kernels`Private`sk[
+      Parallel`Kernels`Private`q$3096, Parallel`Kernels`Private`n0$3096, 
+       Parallel`Kernels`Private`n1$3096]], 
+     Parallel`Kernels`kernel[
+      Parallel`Kernels`Private`bk[
+       SubKernels`LocalKernels`localKernel[
+        SubKernels`LocalKernels`Private`lk[
+         LinkObject[
+         "'/Applications/Mathematica.app/Contents/MacOS/WolframKernel' \
+-subkernel -noinit -nopaclet -wstp", 260, 11], {
+         "'/Applications/Mathematica.app/Contents/MacOS/WolframKernel' \
+-subkernel -noinit -nopaclet -wstp", SubKernels`LocalKernels`LowerPriority -> 
+          True}, SubKernels`LocalKernels`Private`speed$3088, 
+         SubKernels`LocalKernels`Private`preemptive$3088]], 
+       Parallel`Kernels`Private`id$3098, Parallel`Kernels`Private`name$3098], 
+      
+      Parallel`Kernels`Private`ek[
+      Parallel`Kernels`Private`nev$3099, Parallel`Kernels`Private`pb$3099, 
+       Parallel`Kernels`Private`rd$3099], 
+      Parallel`Kernels`Private`sk[
+      Parallel`Kernels`Private`q$3100, Parallel`Kernels`Private`n0$3100, 
+       Parallel`Kernels`Private`n1$3100]]}],
+   Editable->False], TraditionalForm]], "Print",
+ CellChangeTimes->{
+  3.737342342326159*^9},ExpressionUUID->"9e035b10-283c-4d7b-a585-\
+4dfac5a096be"],
+
+Cell[BoxData[
+ FormBox[
+  InterpretationBox[
+   RowBox[{"\<\"Number of link components/number of strands: \"\>", 
+    "\[InvisibleSpace]", "2", "\[InvisibleSpace]", "\<\"/\"\>", 
+    "\[InvisibleSpace]", "2"}],
+   SequenceForm["Number of link components/number of strands: ", 2, "/", 2],
+   Editable->False], TraditionalForm]], "Print",
+ CellChangeTimes->{
+  3.737342342338903*^9},ExpressionUUID->"43eda943-2a0e-4310-8999-\
+abae53c257ad"],
+
+Cell[BoxData[
+ FormBox[
+  InterpretationBox[
+   RowBox[{"\<\"Reshape to \"\>", "\[InvisibleSpace]", "49", 
+    "\[InvisibleSpace]", "\<\"x\"\>", "\[InvisibleSpace]", "49", 
+    "\[InvisibleSpace]", "\<\" matrix\"\>"}],
+   SequenceForm["Reshape to ", 49, "x", 49, " matrix"],
+   Editable->False], TraditionalForm]], "Print",
+ CellChangeTimes->{
+  3.7373423425669537`*^9},ExpressionUUID->"4d47fe7e-cb86-42ed-9f74-\
+4c9e0cdac21e"],
+
+Cell[BoxData[
+ FormBox[
+  InterpretationBox[
+   RowBox[{"\<\"Elapsed time: \"\>", "\[InvisibleSpace]", "225.878476`", 
+    "\[InvisibleSpace]", "\<\"s = \"\>", "\[InvisibleSpace]", 
+    "3.7646412666666667`", "\[InvisibleSpace]", "\<\"min = \"\>", 
+    "\[InvisibleSpace]", "0.0627440211111111`", 
+    "\[InvisibleSpace]", "\<\"hr.\"\>"}],
+   SequenceForm[
+   "Elapsed time: ", 225.878476, "s = ", 3.7646412666666667`, "min = ", 
+    0.0627440211111111, "hr."],
+   Editable->False], TraditionalForm]], "Print",
+ CellChangeTimes->{
+  3.7373425684486227`*^9},ExpressionUUID->"7e83b1cd-1b0c-4f7c-8c5e-\
+5867a34751fd"]
+}, Open  ]],
+
+Cell[BoxData[
+ FormBox[
+  RowBox[{"(", "\[NoBreak]", GridBox[{
+     {"1", "1", "1", "1", "1", "5", "5", "5", "5", "5", "5", "5", "5", "5", 
+      "5", "5", "5", "5", "5", "5", "5", "5", "5", "5", "5", "5", "5", "5", 
+      "5", "11", "11", "11", "11", "11", "11", "11", "11", "11", "11", "11", 
+      "11", "11", "11", "11", "11", "11", "11", "11", "11"},
+     {"1", "1", "1", "1", "1", "5", "5", "5", "5", "5", "5", "5", "5", "5", 
+      "5", "5", "5", "5", "5", "5", "5", "5", "5", "5", "5", "5", "5", "5", 
+      "5", "11", "11", "11", "11", "11", "11", "11", "11", "11", "11", "11", 
+      "11", "11", "11", "11", "11", "11", "11", "11", "11"},
+     {"1", "1", "1", "1", "1", "5", "5", "5", "5", "5", "5", "5", "5", "5", 
+      "5", "5", "5", "5", "5", "5", "5", "5", "5", "5", "5", "5", "5", "5", 
+      "5", "11", "11", "11", "11", "11", "11", "11", "11", "11", "11", "11", 
+      "11", "11", "11", "11", "11", "11", "11", "11", "11"},
+     {"1", "1", "1", "1", "1", "5", "5", "5", "5", "5", "5", "5", "5", "5", 
+      "5", "5", "5", "5", "5", "5", "5", "5", "5", "5", "5", "5", "5", "5", 
+      "5", "11", "11", "11", "11", "11", "11", "11", "11", "11", "11", "11", 
+      "11", "11", "11", "11", "11", "11", "11", "11", "11"},
+     {"1", "1", "1", "1", "1", "5", "5", "5", "5", "5", "5", "5", "5", "5", 
+      "5", "5", "5", "5", "5", "5", "5", "5", "5", "5", "5", "5", "5", "5", 
+      "5", "11", "11", "11", "11", "11", "11", "11", "11", "11", "11", "11", 
+      "11", "11", "11", "11", "11", "11", "11", "11", "11"},
+     {"5", "5", "5", "5", "5", "25", "25", "25", "25", "25", "25", "25", "25",
+       "25", "25", "25", "25", "25", "25", "25", "25", "25", "25", "25", "25",
+       "25", "25", "25", "25", "55", "55", "55", "55", "55", "55", "55", "55",
+       "55", "55", "55", "55", "55", "55", "55", "55", "55", "55", "55", "55"},
+     {"5", "5", "5", "5", "5", "25", "25", "25", "25", "25", "25", "25", "25",
+       "25", "25", "25", "25", "25", "25", "25", "25", "25", "25", "25", "25",
+       "25", "25", "25", "25", "55", "55", "55", "55", "55", "55", "55", "55",
+       "55", "55", "55", "55", "55", "55", "55", "55", "55", "55", "55", "55"},
+     {"5", "5", "5", "5", "5", "25", "25", "25", "25", "25", "25", "25", "25",
+       "25", "25", "25", "25", "25", "25", "25", "25", "25", "25", "25", "25",
+       "25", "25", "25", "25", "55", "55", "55", "55", "55", "55", "55", "55",
+       "55", "55", "55", "55", "55", "55", "55", "55", "55", "55", "55", "55"},
+     {"5", "5", "5", "5", "5", "25", "25", "25", "25", "25", "25", "25", "25",
+       "25", "25", "25", "25", "25", "25", "25", "25", "25", "25", "25", "25",
+       "25", "25", "25", "25", "55", "55", "55", "55", "55", "55", "55", "55",
+       "55", "55", "55", "55", "55", "55", "55", "55", "55", "55", "55", "55"},
+     {"5", "5", "5", "5", "5", "25", "25", "25", "25", "25", "25", "25", "25",
+       "25", "25", "25", "25", "25", "25", "25", "25", "25", "25", "25", "25",
+       "25", "25", "25", "25", "55", "55", "55", "55", "55", "55", "55", "55",
+       "55", "55", "55", "55", "55", "55", "55", "55", "55", "55", "55", "55"},
+     {"5", "5", "5", "5", "5", "25", "25", "25", "25", "25", "25", "25", "25",
+       "25", "25", "25", "25", "25", "25", "25", "25", "25", "25", "25", "25",
+       "25", "25", "25", "25", "55", "55", "55", "55", "55", "55", "55", "55",
+       "55", "55", "55", "55", "55", "55", "55", "55", "55", "55", "55", "55"},
+     {"5", "5", "5", "5", "5", "25", "25", "25", "25", "25", "25", "25", "25",
+       "25", "25", "25", "25", "25", "25", "25", "25", "25", "25", "25", "25",
+       "25", "25", "25", "25", "55", "55", "55", "55", "55", "55", "55", "55",
+       "55", "55", "55", "55", "55", "55", "55", "55", "55", "55", "55", "55"},
+     {"5", "5", "5", "5", "5", "25", "25", "25", "25", "25", "25", "25", "25",
+       "25", "25", "25", "25", "25", "25", "25", "25", "25", "25", "25", "25",
+       "25", "25", "25", "25", "55", "55", "55", "55", "55", "55", "55", "55",
+       "55", "55", "55", "55", "55", "55", "55", "55", "55", "55", "55", "55"},
+     {"5", "5", "5", "5", "5", "25", "25", "25", "25", "25", "25", "25", "25",
+       "25", "25", "25", "25", "25", "25", "25", "25", "25", "25", "25", "25",
+       "25", "25", "25", "25", "55", "55", "55", "55", "55", "55", "55", "55",
+       "55", "55", "55", "55", "55", "55", "55", "55", "55", "55", "55", "55"},
+     {"5", "5", "5", "5", "5", "25", "25", "25", "25", "25", "25", "25", "25",
+       "25", "25", "25", "25", "25", "25", "25", "25", "25", "25", "25", "25",
+       "25", "25", "25", "25", "55", "55", "55", "55", "55", "55", "55", "55",
+       "55", "55", "55", "55", "55", "55", "55", "55", "55", "55", "55", "55"},
+     {"5", "5", "5", "5", "5", "25", "25", "25", "25", "25", "25", "25", "25",
+       "25", "25", "25", "25", "25", "25", "25", "25", "25", "25", "25", "25",
+       "25", "25", "25", "25", "55", "55", "55", "55", "55", "55", "55", "55",
+       "55", "55", "55", "55", "55", "55", "55", "55", "55", "55", "55", "55"},
+     {"5", "5", "5", "5", "5", "25", "25", "25", "25", "25", "25", "25", "25",
+       "25", "25", "25", "25", "25", "25", "25", "25", "25", "25", "25", "25",
+       "25", "25", "25", "25", "55", "55", "55", "55", "55", "55", "55", "55",
+       "55", "55", "55", "55", "55", "55", "55", "55", "55", "55", "55", "55"},
+     {"5", "5", "5", "5", "5", "25", "25", "25", "25", "25", "25", "25", "25",
+       "25", "25", "25", "25", "25", "25", "25", "25", "25", "25", "25", "25",
+       "25", "25", "25", "25", "55", "55", "55", "55", "55", "55", "55", "55",
+       "55", "55", "55", "55", "55", "55", "55", "55", "55", "55", "55", "55"},
+     {"5", "5", "5", "5", "5", "25", "25", "25", "25", "25", "25", "25", "25",
+       "25", "25", "25", "25", "25", "25", "25", "25", "25", "25", "25", "25",
+       "25", "25", "25", "25", "55", "55", "55", "55", "55", "55", "55", "55",
+       "55", "55", "55", "55", "55", "55", "55", "55", "55", "55", "55", "55"},
+     {"5", "5", "5", "5", "5", "25", "25", "25", "25", "25", "25", "25", "25",
+       "25", "25", "25", "25", "25", "25", "25", "25", "25", "25", "25", "25",
+       "25", "25", "25", "25", "55", "55", "55", "55", "55", "55", "55", "55",
+       "55", "55", "55", "55", "55", "55", "55", "55", "55", "55", "55", "55"},
+     {"5", "5", "5", "5", "5", "25", "25", "25", "25", "25", "25", "25", "25",
+       "25", "25", "25", "25", "25", "25", "25", "25", "25", "25", "25", "25",
+       "25", "25", "25", "25", "55", "55", "55", "55", "55", "55", "55", "55",
+       "55", "55", "55", "55", "55", "55", "55", "55", "55", "55", "55", "55"},
+     {"5", "5", "5", "5", "5", "25", "25", "25", "25", "25", "25", "25", "25",
+       "25", "25", "25", "25", "25", "25", "25", "25", "25", "25", "25", "25",
+       "25", "25", "25", "25", "55", "55", "55", "55", "55", "55", "55", "55",
+       "55", "55", "55", "55", "55", "55", "55", "55", "55", "55", "55", "55"},
+     {"5", "5", "5", "5", "5", "25", "25", "25", "25", "25", "25", "25", "25",
+       "25", "25", "25", "25", "25", "25", "25", "25", "25", "25", "25", "25",
+       "25", "25", "25", "25", "55", "55", "55", "55", "55", "55", "55", "55",
+       "55", "55", "55", "55", "55", "55", "55", "55", "55", "55", "55", "55"},
+     {"5", "5", "5", "5", "5", "25", "25", "25", "25", "25", "25", "25", "25",
+       "25", "25", "25", "25", "25", "25", "25", "25", "25", "25", "25", "25",
+       "25", "25", "25", "25", "55", "55", "55", "55", "55", "55", "55", "55",
+       "55", "55", "55", "55", "55", "55", "55", "55", "55", "55", "55", "55"},
+     {"5", "5", "5", "5", "5", "25", "25", "25", "25", "25", "25", "25", "25",
+       "25", "25", "25", "25", "25", "25", "25", "25", "25", "25", "25", "25",
+       "25", "25", "25", "25", "55", "55", "55", "55", "55", "55", "55", "55",
+       "55", "55", "55", "55", "55", "55", "55", "55", "55", "55", "55", "55"},
+     {"5", "5", "5", "5", "5", "25", "25", "25", "25", "25", "25", "25", "25",
+       "25", "25", "25", "25", "25", "25", "25", "25", "25", "25", "25", "25",
+       "25", "25", "25", "25", "55", "55", "55", "55", "55", "55", "55", "55",
+       "55", "55", "55", "55", "55", "55", "55", "55", "55", "55", "55", "55"},
+     {"5", "5", "5", "5", "5", "25", "25", "25", "25", "25", "25", "25", "25",
+       "25", "25", "25", "25", "25", "25", "25", "25", "25", "25", "25", "25",
+       "25", "25", "25", "25", "55", "55", "55", "55", "55", "55", "55", "55",
+       "55", "55", "55", "55", "55", "55", "55", "55", "55", "55", "55", "55"},
+     {"5", "5", "5", "5", "5", "25", "25", "25", "25", "25", "25", "25", "25",
+       "25", "25", "25", "25", "25", "25", "25", "25", "25", "25", "25", "25",
+       "25", "25", "25", "25", "55", "55", "55", "55", "55", "55", "55", "55",
+       "55", "55", "55", "55", "55", "55", "55", "55", "55", "55", "55", "55"},
+     {"5", "5", "5", "5", "5", "25", "25", "25", "25", "25", "25", "25", "25",
+       "25", "25", "25", "25", "25", "25", "25", "25", "25", "25", "25", "25",
+       "25", "25", "25", "25", "55", "55", "55", "55", "55", "55", "55", "55",
+       "55", "55", "55", "55", "55", "55", "55", "55", "55", "55", "55", "55"},
+     {"11", "11", "11", "11", "11", "55", "55", "55", "55", "55", "55", "55", 
+      "55", "55", "55", "55", "55", "55", "55", "55", "55", "55", "55", "55", 
+      "55", "55", "55", "55", "55", "121", "121", "121", "121", "121", "121", 
+      "121", "121", "121", "121", "121", "121", "121", "121", "121", "121", 
+      "121", "121", "121", "121"},
+     {"11", "11", "11", "11", "11", "55", "55", "55", "55", "55", "55", "55", 
+      "55", "55", "55", "55", "55", "55", "55", "55", "55", "55", "55", "55", 
+      "55", "55", "55", "55", "55", "121", "121", "121", "121", "121", "121", 
+      "121", "121", "121", "121", "121", "121", "121", "121", "121", "121", 
+      "121", "121", "121", "121"},
+     {"11", "11", "11", "11", "11", "55", "55", "55", "55", "55", "55", "55", 
+      "55", "55", "55", "55", "55", "55", "55", "55", "55", "55", "55", "55", 
+      "55", "55", "55", "55", "55", "121", "121", "121", "121", "121", "121", 
+      "121", "121", "121", "121", "121", "121", "121", "121", "121", "121", 
+      "121", "121", "121", "121"},
+     {"11", "11", "11", "11", "11", "55", "55", "55", "55", "55", "55", "55", 
+      "55", "55", "55", "55", "55", "55", "55", "55", "55", "55", "55", "55", 
+      "55", "55", "55", "55", "55", "121", "121", "121", "121", "121", "121", 
+      "121", "121", "121", "121", "121", "121", "121", "121", "121", "121", 
+      "121", "121", "121", "121"},
+     {"11", "11", "11", "11", "11", "55", "55", "55", "55", "55", "55", "55", 
+      "55", "55", "55", "55", "55", "55", "55", "55", "55", "55", "55", "55", 
+      "55", "55", "55", "55", "55", "121", "121", "121", "121", "121", "121", 
+      "121", "121", "121", "121", "121", "121", "121", "121", "121", "121", 
+      "121", "121", "121", "121"},
+     {"11", "11", "11", "11", "11", "55", "55", "55", "55", "55", "55", "55", 
+      "55", "55", "55", "55", "55", "55", "55", "55", "55", "55", "55", "55", 
+      "55", "55", "55", "55", "55", "121", "121", "121", "121", "121", "121", 
+      "121", "121", "121", "121", "121", "121", "121", "121", "121", "121", 
+      "121", "121", "121", "121"},
+     {"11", "11", "11", "11", "11", "55", "55", "55", "55", "55", "55", "55", 
+      "55", "55", "55", "55", "55", "55", "55", "55", "55", "55", "55", "55", 
+      "55", "55", "55", "55", "55", "121", "121", "121", "121", "121", "121", 
+      "121", "121", "121", "121", "121", "121", "121", "121", "121", "121", 
+      "121", "121", "121", "121"},
+     {"11", "11", "11", "11", "11", "55", "55", "55", "55", "55", "55", "55", 
+      "55", "55", "55", "55", "55", "55", "55", "55", "55", "55", "55", "55", 
+      "55", "55", "55", "55", "55", "121", "121", "121", "121", "121", "121", 
+      "121", "121", "121", "121", "121", "121", "121", "121", "121", "121", 
+      "121", "121", "121", "121"},
+     {"11", "11", "11", "11", "11", "55", "55", "55", "55", "55", "55", "55", 
+      "55", "55", "55", "55", "55", "55", "55", "55", "55", "55", "55", "55", 
+      "55", "55", "55", "55", "55", "121", "121", "121", "121", "121", "121", 
+      "121", "121", "121", "121", "121", "121", "121", "121", "121", "121", 
+      "121", "121", "121", "121"},
+     {"11", "11", "11", "11", "11", "55", "55", "55", "55", "55", "55", "55", 
+      "55", "55", "55", "55", "55", "55", "55", "55", "55", "55", "55", "55", 
+      "55", "55", "55", "55", "55", "121", "121", "121", "121", "121", "121", 
+      "121", "121", "121", "121", "121", "121", "121", "121", "121", "121", 
+      "121", "121", "121", "121"},
+     {"11", "11", "11", "11", "11", "55", "55", "55", "55", "55", "55", "55", 
+      "55", "55", "55", "55", "55", "55", "55", "55", "55", "55", "55", "55", 
+      "55", "55", "55", "55", "55", "121", "121", "121", "121", "121", "121", 
+      "121", "121", "121", "121", "121", "121", "121", "121", "121", "121", 
+      "121", "121", "121", "121"},
+     {"11", "11", "11", "11", "11", "55", "55", "55", "55", "55", "55", "55", 
+      "55", "55", "55", "55", "55", "55", "55", "55", "55", "55", "55", "55", 
+      "55", "55", "55", "55", "55", "121", "121", "121", "121", "121", "121", 
+      "121", "121", "121", "121", "121", "121", "121", "121", "121", "121", 
+      "121", "121", "121", "121"},
+     {"11", "11", "11", "11", "11", "55", "55", "55", "55", "55", "55", "55", 
+      "55", "55", "55", "55", "55", "55", "55", "55", "55", "55", "55", "55", 
+      "55", "55", "55", "55", "55", "121", "121", "121", "121", "121", "121", 
+      "121", "121", "121", "121", "121", "121", "121", "121", "121", "121", 
+      "121", "121", "121", "121"},
+     {"11", "11", "11", "11", "11", "55", "55", "55", "55", "55", "55", "55", 
+      "55", "55", "55", "55", "55", "55", "55", "55", "55", "55", "55", "55", 
+      "55", "55", "55", "55", "55", "121", "121", "121", "121", "121", "121", 
+      "121", "121", "121", "121", "121", "121", "121", "121", "121", "121", 
+      "121", "121", "121", "121"},
+     {"11", "11", "11", "11", "11", "55", "55", "55", "55", "55", "55", "55", 
+      "55", "55", "55", "55", "55", "55", "55", "55", "55", "55", "55", "55", 
+      "55", "55", "55", "55", "55", "121", "121", "121", "121", "121", "121", 
+      "121", "121", "121", "121", "121", "121", "121", "121", "121", "121", 
+      "121", "121", "121", "121"},
+     {"11", "11", "11", "11", "11", "55", "55", "55", "55", "55", "55", "55", 
+      "55", "55", "55", "55", "55", "55", "55", "55", "55", "55", "55", "55", 
+      "55", "55", "55", "55", "55", "121", "121", "121", "121", "121", "121", 
+      "121", "121", "121", "121", "121", "121", "121", "121", "121", "121", 
+      "121", "121", "121", "121"},
+     {"11", "11", "11", "11", "11", "55", "55", "55", "55", "55", "55", "55", 
+      "55", "55", "55", "55", "55", "55", "55", "55", "55", "55", "55", "55", 
+      "55", "55", "55", "55", "55", "121", "121", "121", "121", "121", "121", 
+      "121", "121", "121", "121", "121", "121", "121", "121", "121", "121", 
+      "121", "121", "121", "121"},
+     {"11", "11", "11", "11", "11", "55", "55", "55", "55", "55", "55", "55", 
+      "55", "55", "55", "55", "55", "55", "55", "55", "55", "55", "55", "55", 
+      "55", "55", "55", "55", "55", "121", "121", "121", "121", "121", "121", 
+      "121", "121", "121", "121", "121", "121", "121", "121", "121", "121", 
+      "121", "121", "121", "121"},
+     {"11", "11", "11", "11", "11", "55", "55", "55", "55", "55", "55", "55", 
+      "55", "55", "55", "55", "55", "55", "55", "55", "55", "55", "55", "55", 
+      "55", "55", "55", "55", "55", "121", "121", "121", "121", "121", "121", 
+      "121", "121", "121", "121", "121", "121", "121", "121", "121", "121", 
+      "121", "121", "121", "121"},
+     {"11", "11", "11", "11", "11", "55", "55", "55", "55", "55", "55", "55", 
+      "55", "55", "55", "55", "55", "55", "55", "55", "55", "55", "55", "55", 
+      "55", "55", "55", "55", "55", "121", "121", "121", "121", "121", "121", 
+      "121", "121", "121", "121", "121", "121", "121", "121", "121", "121", 
+      "121", "121", "121", "121"}
+    },
+    GridBoxAlignment->{
+     "Columns" -> {{Center}}, "ColumnsIndexed" -> {}, "Rows" -> {{Baseline}}, 
+      "RowsIndexed" -> {}},
+    GridBoxSpacings->{"Columns" -> {
+        Offset[0.27999999999999997`], {
+         Offset[0.7]}, 
+        Offset[0.27999999999999997`]}, "ColumnsIndexed" -> {}, "Rows" -> {
+        Offset[0.2], {
+         Offset[0.4]}, 
+        Offset[0.2]}, "RowsIndexed" -> {}}], "\[NoBreak]", ")"}], 
+  TraditionalForm]], "Output",
+ CellChangeTimes->{
+  3.737342568523425*^9},ExpressionUUID->"fcad5361-9af8-4a2b-bde7-\
+685b22e6c483"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"idd", "=", 
+  RowBox[{"ComputeLinkInvariant", "[", 
+   RowBox[{"4", ",", 
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{"-", "1"}], ",", "1"}], "}"}], ",", "2"}], "}"}]}], 
+   "]"}]}]], "Input",
+ CellChangeTimes->{
+  3.7373417609761553`*^9},ExpressionUUID->"0be62d98-a834-451f-8bed-\
+f5e9052f569b"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ FormBox["\<\"+++++-----+++++-----+++++-----+++++-----+++++-----+++++\"\>", 
+  TraditionalForm]], "Print",
+ CellChangeTimes->{
+  3.73734256863017*^9},ExpressionUUID->"727bf050-f9c6-4ee8-b23c-8d9274659833"],
+
+Cell[BoxData[
+ FormBox[
+  InterpretationBox[
+   RowBox[{"\<\"Computing braid = \"\>", "\[InvisibleSpace]", 
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{"-", "1"}], ",", "1"}], "}"}], ",", "2"}], "}"}], 
+    "\[InvisibleSpace]", "\<\" for u=\"\>", "\[InvisibleSpace]", "4", 
+    "\[InvisibleSpace]", "\<\".\"\>"}],
+   SequenceForm["Computing braid = ", {{-1, 1}, 2}, " for u=", 4, "."],
+   Editable->False], TraditionalForm]], "Print",
+ CellChangeTimes->{
+  3.73734256863995*^9},ExpressionUUID->"68b6f19a-3a93-4b60-8c44-0a35046f2c57"],
+
+Cell[BoxData[
+ FormBox[
+  InterpretationBox[
+   RowBox[{"\<\"For conjugacy classes (reps): \"\>", "\[InvisibleSpace]", 
+    RowBox[{"{", 
+     RowBox[{
+     "1", ",", "3", ",", "6", ",", "2", ",", "4", ",", "7", ",", "11"}], 
+     "}"}]}],
+   SequenceForm["For conjugacy classes (reps): ", {1, 3, 6, 2, 4, 7, 11}],
+   Editable->False], TraditionalForm]], "Print",
+ CellChangeTimes->{
+  3.7373425686538963`*^9},ExpressionUUID->"956d7d4c-5288-4b66-b540-\
+e19b37c4a959"],
+
+Cell[BoxData[
+ FormBox[
+  InterpretationBox[
+   RowBox[{"\<\"and for projective irreps: \"\>", "\[InvisibleSpace]", "0", 
+    "\[InvisibleSpace]", "\<\" to \"\>", "\[InvisibleSpace]", 
+    RowBox[{"{", 
+     RowBox[{
+     "6", ",", "10", ",", "10", ",", "4", ",", "4", ",", "4", ",", "4"}], 
+     "}"}], "\[InvisibleSpace]", "\<\".\"\>"}],
+   SequenceForm[
+   "and for projective irreps: ", 0, " to ", {6, 10, 10, 4, 4, 4, 4}, "."],
+   Editable->False], TraditionalForm]], "Print",
+ CellChangeTimes->{
+  3.7373425686590223`*^9},ExpressionUUID->"5660a57a-86b5-4eab-890f-\
+853edb35a63a"],
+
+Cell[BoxData[
+ FormBox[
+  InterpretationBox[
+   RowBox[{"\<\"Using kernels: \"\>", "\[InvisibleSpace]", 
+    RowBox[{"{", 
+     RowBox[{
+      FormBox[
+       RowBox[{"\<\"KernelObject\"\>", "(", 
+        RowBox[{"1", ",", "\<\"local\"\>"}], ")"}],
+       TraditionalForm], ",", 
+      FormBox[
+       RowBox[{"\<\"KernelObject\"\>", "(", 
+        RowBox[{"2", ",", "\<\"local\"\>"}], ")"}],
+       TraditionalForm]}], "}"}]}],
+   SequenceForm["Using kernels: ", {
+     Parallel`Kernels`kernel[
+      Parallel`Kernels`Private`bk[
+       SubKernels`LocalKernels`localKernel[
+        SubKernels`LocalKernels`Private`lk[
+         LinkObject[
+         "'/Applications/Mathematica.app/Contents/MacOS/WolframKernel' \
+-subkernel -noinit -nopaclet -wstp", 259, 10], {
+         "'/Applications/Mathematica.app/Contents/MacOS/WolframKernel' \
+-subkernel -noinit -nopaclet -wstp", SubKernels`LocalKernels`LowerPriority -> 
+          True}, SubKernels`LocalKernels`Private`speed$3087, 
+         SubKernels`LocalKernels`Private`preemptive$3087]], 
+       Parallel`Kernels`Private`id$3094, Parallel`Kernels`Private`name$3094], 
+      
+      Parallel`Kernels`Private`ek[
+      Parallel`Kernels`Private`nev$3095, Parallel`Kernels`Private`pb$3095, 
+       Parallel`Kernels`Private`rd$3095], 
+      Parallel`Kernels`Private`sk[
+      Parallel`Kernels`Private`q$3096, Parallel`Kernels`Private`n0$3096, 
+       Parallel`Kernels`Private`n1$3096]], 
+     Parallel`Kernels`kernel[
+      Parallel`Kernels`Private`bk[
+       SubKernels`LocalKernels`localKernel[
+        SubKernels`LocalKernels`Private`lk[
+         LinkObject[
+         "'/Applications/Mathematica.app/Contents/MacOS/WolframKernel' \
+-subkernel -noinit -nopaclet -wstp", 260, 11], {
+         "'/Applications/Mathematica.app/Contents/MacOS/WolframKernel' \
+-subkernel -noinit -nopaclet -wstp", SubKernels`LocalKernels`LowerPriority -> 
+          True}, SubKernels`LocalKernels`Private`speed$3088, 
+         SubKernels`LocalKernels`Private`preemptive$3088]], 
+       Parallel`Kernels`Private`id$3098, Parallel`Kernels`Private`name$3098], 
+      
+      Parallel`Kernels`Private`ek[
+      Parallel`Kernels`Private`nev$3099, Parallel`Kernels`Private`pb$3099, 
+       Parallel`Kernels`Private`rd$3099], 
+      Parallel`Kernels`Private`sk[
+      Parallel`Kernels`Private`q$3100, Parallel`Kernels`Private`n0$3100, 
+       Parallel`Kernels`Private`n1$3100]]}],
+   Editable->False], TraditionalForm]], "Print",
+ CellChangeTimes->{
+  3.737342568664709*^9},ExpressionUUID->"6b076f0f-f6a5-4700-ac4d-\
+c2e9e8e6177a"],
+
+Cell[BoxData[
+ FormBox[
+  InterpretationBox[
+   RowBox[{"\<\"Number of link components/number of strands: \"\>", 
+    "\[InvisibleSpace]", "2", "\[InvisibleSpace]", "\<\"/\"\>", 
+    "\[InvisibleSpace]", "2"}],
+   SequenceForm["Number of link components/number of strands: ", 2, "/", 2],
+   Editable->False], TraditionalForm]], "Print",
+ CellChangeTimes->{
+  3.7373425686700773`*^9},ExpressionUUID->"d076936e-f379-4474-8205-\
+496f08af5aea"],
+
+Cell[BoxData[
+ FormBox[
+  InterpretationBox[
+   RowBox[{"\<\"Reshape to \"\>", "\[InvisibleSpace]", "49", 
+    "\[InvisibleSpace]", "\<\"x\"\>", "\[InvisibleSpace]", "49", 
+    "\[InvisibleSpace]", "\<\" matrix\"\>"}],
+   SequenceForm["Reshape to ", 49, "x", 49, " matrix"],
+   Editable->False], TraditionalForm]], "Print",
+ CellChangeTimes->{
+  3.737342569057909*^9},ExpressionUUID->"0c8c9876-5786-4827-b34f-\
+05a85887b692"],
+
+Cell[BoxData[
+ FormBox[
+  InterpretationBox[
+   RowBox[{"\<\"Elapsed time: \"\>", "\[InvisibleSpace]", "217.975775`", 
+    "\[InvisibleSpace]", "\<\"s = \"\>", "\[InvisibleSpace]", 
+    "3.632929583333333`", "\[InvisibleSpace]", "\<\"min = \"\>", 
+    "\[InvisibleSpace]", "0.060548826388888886`", 
+    "\[InvisibleSpace]", "\<\"hr.\"\>"}],
+   SequenceForm[
+   "Elapsed time: ", 217.975775, "s = ", 3.632929583333333, "min = ", 
+    0.060548826388888886`, "hr."],
+   Editable->False], TraditionalForm]], "Print",
+ CellChangeTimes->{
+  3.7373427870367937`*^9},ExpressionUUID->"e87c9e06-539a-4a77-9cde-\
+c0602aa130ab"]
+}, Open  ]],
+
+Cell[BoxData[
+ FormBox[
+  RowBox[{"(", "\[NoBreak]", GridBox[{
+     {"1", "1", "1", "1", "1", "5", "5", "5", "5", "5", "5", "5", "5", "5", 
+      "5", "5", "5", "5", "5", "5", "5", "5", "5", "5", "5", "5", "5", "5", 
+      "5", "11", "11", "11", "11", "11", "11", "11", "11", "11", "11", "11", 
+      "11", "11", "11", "11", "11", "11", "11", "11", "11"},
+     {"1", "1", "1", "1", "1", "5", "5", "5", "5", "5", "5", "5", "5", "5", 
+      "5", "5", "5", "5", "5", "5", "5", "5", "5", "5", "5", "5", "5", "5", 
+      "5", "11", "11", "11", "11", "11", "11", "11", "11", "11", "11", "11", 
+      "11", "11", "11", "11", "11", "11", "11", "11", "11"},
+     {"1", "1", "1", "1", "1", "5", "5", "5", "5", "5", "5", "5", "5", "5", 
+      "5", "5", "5", "5", "5", "5", "5", "5", "5", "5", "5", "5", "5", "5", 
+      "5", "11", "11", "11", "11", "11", "11", "11", "11", "11", "11", "11", 
+      "11", "11", "11", "11", "11", "11", "11", "11", "11"},
+     {"1", "1", "1", "1", "1", "5", "5", "5", "5", "5", "5", "5", "5", "5", 
+      "5", "5", "5", "5", "5", "5", "5", "5", "5", "5", "5", "5", "5", "5", 
+      "5", "11", "11", "11", "11", "11", "11", "11", "11", "11", "11", "11", 
+      "11", "11", "11", "11", "11", "11", "11", "11", "11"},
+     {"1", "1", "1", "1", "1", "5", "5", "5", "5", "5", "5", "5", "5", "5", 
+      "5", "5", "5", "5", "5", "5", "5", "5", "5", "5", "5", "5", "5", "5", 
+      "5", "11", "11", "11", "11", "11", "11", "11", "11", "11", "11", "11", 
+      "11", "11", "11", "11", "11", "11", "11", "11", "11"},
+     {"5", "5", "5", "5", "5", "25", "25", "25", "25", "25", "25", "25", "25",
+       "25", "25", "25", "25", "25", "25", "25", "25", "25", "25", "25", "25",
+       "25", "25", "25", "25", "55", "55", "55", "55", "55", "55", "55", "55",
+       "55", "55", "55", "55", "55", "55", "55", "55", "55", "55", "55", "55"},
+     {"5", "5", "5", "5", "5", "25", "25", "25", "25", "25", "25", "25", "25",
+       "25", "25", "25", "25", "25", "25", "25", "25", "25", "25", "25", "25",
+       "25", "25", "25", "25", "55", "55", "55", "55", "55", "55", "55", "55",
+       "55", "55", "55", "55", "55", "55", "55", "55", "55", "55", "55", "55"},
+     {"5", "5", "5", "5", "5", "25", "25", "25", "25", "25", "25", "25", "25",
+       "25", "25", "25", "25", "25", "25", "25", "25", "25", "25", "25", "25",
+       "25", "25", "25", "25", "55", "55", "55", "55", "55", "55", "55", "55",
+       "55", "55", "55", "55", "55", "55", "55", "55", "55", "55", "55", "55"},
+     {"5", "5", "5", "5", "5", "25", "25", "25", "25", "25", "25", "25", "25",
+       "25", "25", "25", "25", "25", "25", "25", "25", "25", "25", "25", "25",
+       "25", "25", "25", "25", "55", "55", "55", "55", "55", "55", "55", "55",
+       "55", "55", "55", "55", "55", "55", "55", "55", "55", "55", "55", "55"},
+     {"5", "5", "5", "5", "5", "25", "25", "25", "25", "25", "25", "25", "25",
+       "25", "25", "25", "25", "25", "25", "25", "25", "25", "25", "25", "25",
+       "25", "25", "25", "25", "55", "55", "55", "55", "55", "55", "55", "55",
+       "55", "55", "55", "55", "55", "55", "55", "55", "55", "55", "55", "55"},
+     {"5", "5", "5", "5", "5", "25", "25", "25", "25", "25", "25", "25", "25",
+       "25", "25", "25", "25", "25", "25", "25", "25", "25", "25", "25", "25",
+       "25", "25", "25", "25", "55", "55", "55", "55", "55", "55", "55", "55",
+       "55", "55", "55", "55", "55", "55", "55", "55", "55", "55", "55", "55"},
+     {"5", "5", "5", "5", "5", "25", "25", "25", "25", "25", "25", "25", "25",
+       "25", "25", "25", "25", "25", "25", "25", "25", "25", "25", "25", "25",
+       "25", "25", "25", "25", "55", "55", "55", "55", "55", "55", "55", "55",
+       "55", "55", "55", "55", "55", "55", "55", "55", "55", "55", "55", "55"},
+     {"5", "5", "5", "5", "5", "25", "25", "25", "25", "25", "25", "25", "25",
+       "25", "25", "25", "25", "25", "25", "25", "25", "25", "25", "25", "25",
+       "25", "25", "25", "25", "55", "55", "55", "55", "55", "55", "55", "55",
+       "55", "55", "55", "55", "55", "55", "55", "55", "55", "55", "55", "55"},
+     {"5", "5", "5", "5", "5", "25", "25", "25", "25", "25", "25", "25", "25",
+       "25", "25", "25", "25", "25", "25", "25", "25", "25", "25", "25", "25",
+       "25", "25", "25", "25", "55", "55", "55", "55", "55", "55", "55", "55",
+       "55", "55", "55", "55", "55", "55", "55", "55", "55", "55", "55", "55"},
+     {"5", "5", "5", "5", "5", "25", "25", "25", "25", "25", "25", "25", "25",
+       "25", "25", "25", "25", "25", "25", "25", "25", "25", "25", "25", "25",
+       "25", "25", "25", "25", "55", "55", "55", "55", "55", "55", "55", "55",
+       "55", "55", "55", "55", "55", "55", "55", "55", "55", "55", "55", "55"},
+     {"5", "5", "5", "5", "5", "25", "25", "25", "25", "25", "25", "25", "25",
+       "25", "25", "25", "25", "25", "25", "25", "25", "25", "25", "25", "25",
+       "25", "25", "25", "25", "55", "55", "55", "55", "55", "55", "55", "55",
+       "55", "55", "55", "55", "55", "55", "55", "55", "55", "55", "55", "55"},
+     {"5", "5", "5", "5", "5", "25", "25", "25", "25", "25", "25", "25", "25",
+       "25", "25", "25", "25", "25", "25", "25", "25", "25", "25", "25", "25",
+       "25", "25", "25", "25", "55", "55", "55", "55", "55", "55", "55", "55",
+       "55", "55", "55", "55", "55", "55", "55", "55", "55", "55", "55", "55"},
+     {"5", "5", "5", "5", "5", "25", "25", "25", "25", "25", "25", "25", "25",
+       "25", "25", "25", "25", "25", "25", "25", "25", "25", "25", "25", "25",
+       "25", "25", "25", "25", "55", "55", "55", "55", "55", "55", "55", "55",
+       "55", "55", "55", "55", "55", "55", "55", "55", "55", "55", "55", "55"},
+     {"5", "5", "5", "5", "5", "25", "25", "25", "25", "25", "25", "25", "25",
+       "25", "25", "25", "25", "25", "25", "25", "25", "25", "25", "25", "25",
+       "25", "25", "25", "25", "55", "55", "55", "55", "55", "55", "55", "55",
+       "55", "55", "55", "55", "55", "55", "55", "55", "55", "55", "55", "55"},
+     {"5", "5", "5", "5", "5", "25", "25", "25", "25", "25", "25", "25", "25",
+       "25", "25", "25", "25", "25", "25", "25", "25", "25", "25", "25", "25",
+       "25", "25", "25", "25", "55", "55", "55", "55", "55", "55", "55", "55",
+       "55", "55", "55", "55", "55", "55", "55", "55", "55", "55", "55", "55"},
+     {"5", "5", "5", "5", "5", "25", "25", "25", "25", "25", "25", "25", "25",
+       "25", "25", "25", "25", "25", "25", "25", "25", "25", "25", "25", "25",
+       "25", "25", "25", "25", "55", "55", "55", "55", "55", "55", "55", "55",
+       "55", "55", "55", "55", "55", "55", "55", "55", "55", "55", "55", "55"},
+     {"5", "5", "5", "5", "5", "25", "25", "25", "25", "25", "25", "25", "25",
+       "25", "25", "25", "25", "25", "25", "25", "25", "25", "25", "25", "25",
+       "25", "25", "25", "25", "55", "55", "55", "55", "55", "55", "55", "55",
+       "55", "55", "55", "55", "55", "55", "55", "55", "55", "55", "55", "55"},
+     {"5", "5", "5", "5", "5", "25", "25", "25", "25", "25", "25", "25", "25",
+       "25", "25", "25", "25", "25", "25", "25", "25", "25", "25", "25", "25",
+       "25", "25", "25", "25", "55", "55", "55", "55", "55", "55", "55", "55",
+       "55", "55", "55", "55", "55", "55", "55", "55", "55", "55", "55", "55"},
+     {"5", "5", "5", "5", "5", "25", "25", "25", "25", "25", "25", "25", "25",
+       "25", "25", "25", "25", "25", "25", "25", "25", "25", "25", "25", "25",
+       "25", "25", "25", "25", "55", "55", "55", "55", "55", "55", "55", "55",
+       "55", "55", "55", "55", "55", "55", "55", "55", "55", "55", "55", "55"},
+     {"5", "5", "5", "5", "5", "25", "25", "25", "25", "25", "25", "25", "25",
+       "25", "25", "25", "25", "25", "25", "25", "25", "25", "25", "25", "25",
+       "25", "25", "25", "25", "55", "55", "55", "55", "55", "55", "55", "55",
+       "55", "55", "55", "55", "55", "55", "55", "55", "55", "55", "55", "55"},
+     {"5", "5", "5", "5", "5", "25", "25", "25", "25", "25", "25", "25", "25",
+       "25", "25", "25", "25", "25", "25", "25", "25", "25", "25", "25", "25",
+       "25", "25", "25", "25", "55", "55", "55", "55", "55", "55", "55", "55",
+       "55", "55", "55", "55", "55", "55", "55", "55", "55", "55", "55", "55"},
+     {"5", "5", "5", "5", "5", "25", "25", "25", "25", "25", "25", "25", "25",
+       "25", "25", "25", "25", "25", "25", "25", "25", "25", "25", "25", "25",
+       "25", "25", "25", "25", "55", "55", "55", "55", "55", "55", "55", "55",
+       "55", "55", "55", "55", "55", "55", "55", "55", "55", "55", "55", "55"},
+     {"5", "5", "5", "5", "5", "25", "25", "25", "25", "25", "25", "25", "25",
+       "25", "25", "25", "25", "25", "25", "25", "25", "25", "25", "25", "25",
+       "25", "25", "25", "25", "55", "55", "55", "55", "55", "55", "55", "55",
+       "55", "55", "55", "55", "55", "55", "55", "55", "55", "55", "55", "55"},
+     {"5", "5", "5", "5", "5", "25", "25", "25", "25", "25", "25", "25", "25",
+       "25", "25", "25", "25", "25", "25", "25", "25", "25", "25", "25", "25",
+       "25", "25", "25", "25", "55", "55", "55", "55", "55", "55", "55", "55",
+       "55", "55", "55", "55", "55", "55", "55", "55", "55", "55", "55", "55"},
+     {"11", "11", "11", "11", "11", "55", "55", "55", "55", "55", "55", "55", 
+      "55", "55", "55", "55", "55", "55", "55", "55", "55", "55", "55", "55", 
+      "55", "55", "55", "55", "55", "121", "121", "121", "121", "121", "121", 
+      "121", "121", "121", "121", "121", "121", "121", "121", "121", "121", 
+      "121", "121", "121", "121"},
+     {"11", "11", "11", "11", "11", "55", "55", "55", "55", "55", "55", "55", 
+      "55", "55", "55", "55", "55", "55", "55", "55", "55", "55", "55", "55", 
+      "55", "55", "55", "55", "55", "121", "121", "121", "121", "121", "121", 
+      "121", "121", "121", "121", "121", "121", "121", "121", "121", "121", 
+      "121", "121", "121", "121"},
+     {"11", "11", "11", "11", "11", "55", "55", "55", "55", "55", "55", "55", 
+      "55", "55", "55", "55", "55", "55", "55", "55", "55", "55", "55", "55", 
+      "55", "55", "55", "55", "55", "121", "121", "121", "121", "121", "121", 
+      "121", "121", "121", "121", "121", "121", "121", "121", "121", "121", 
+      "121", "121", "121", "121"},
+     {"11", "11", "11", "11", "11", "55", "55", "55", "55", "55", "55", "55", 
+      "55", "55", "55", "55", "55", "55", "55", "55", "55", "55", "55", "55", 
+      "55", "55", "55", "55", "55", "121", "121", "121", "121", "121", "121", 
+      "121", "121", "121", "121", "121", "121", "121", "121", "121", "121", 
+      "121", "121", "121", "121"},
+     {"11", "11", "11", "11", "11", "55", "55", "55", "55", "55", "55", "55", 
+      "55", "55", "55", "55", "55", "55", "55", "55", "55", "55", "55", "55", 
+      "55", "55", "55", "55", "55", "121", "121", "121", "121", "121", "121", 
+      "121", "121", "121", "121", "121", "121", "121", "121", "121", "121", 
+      "121", "121", "121", "121"},
+     {"11", "11", "11", "11", "11", "55", "55", "55", "55", "55", "55", "55", 
+      "55", "55", "55", "55", "55", "55", "55", "55", "55", "55", "55", "55", 
+      "55", "55", "55", "55", "55", "121", "121", "121", "121", "121", "121", 
+      "121", "121", "121", "121", "121", "121", "121", "121", "121", "121", 
+      "121", "121", "121", "121"},
+     {"11", "11", "11", "11", "11", "55", "55", "55", "55", "55", "55", "55", 
+      "55", "55", "55", "55", "55", "55", "55", "55", "55", "55", "55", "55", 
+      "55", "55", "55", "55", "55", "121", "121", "121", "121", "121", "121", 
+      "121", "121", "121", "121", "121", "121", "121", "121", "121", "121", 
+      "121", "121", "121", "121"},
+     {"11", "11", "11", "11", "11", "55", "55", "55", "55", "55", "55", "55", 
+      "55", "55", "55", "55", "55", "55", "55", "55", "55", "55", "55", "55", 
+      "55", "55", "55", "55", "55", "121", "121", "121", "121", "121", "121", 
+      "121", "121", "121", "121", "121", "121", "121", "121", "121", "121", 
+      "121", "121", "121", "121"},
+     {"11", "11", "11", "11", "11", "55", "55", "55", "55", "55", "55", "55", 
+      "55", "55", "55", "55", "55", "55", "55", "55", "55", "55", "55", "55", 
+      "55", "55", "55", "55", "55", "121", "121", "121", "121", "121", "121", 
+      "121", "121", "121", "121", "121", "121", "121", "121", "121", "121", 
+      "121", "121", "121", "121"},
+     {"11", "11", "11", "11", "11", "55", "55", "55", "55", "55", "55", "55", 
+      "55", "55", "55", "55", "55", "55", "55", "55", "55", "55", "55", "55", 
+      "55", "55", "55", "55", "55", "121", "121", "121", "121", "121", "121", 
+      "121", "121", "121", "121", "121", "121", "121", "121", "121", "121", 
+      "121", "121", "121", "121"},
+     {"11", "11", "11", "11", "11", "55", "55", "55", "55", "55", "55", "55", 
+      "55", "55", "55", "55", "55", "55", "55", "55", "55", "55", "55", "55", 
+      "55", "55", "55", "55", "55", "121", "121", "121", "121", "121", "121", 
+      "121", "121", "121", "121", "121", "121", "121", "121", "121", "121", 
+      "121", "121", "121", "121"},
+     {"11", "11", "11", "11", "11", "55", "55", "55", "55", "55", "55", "55", 
+      "55", "55", "55", "55", "55", "55", "55", "55", "55", "55", "55", "55", 
+      "55", "55", "55", "55", "55", "121", "121", "121", "121", "121", "121", 
+      "121", "121", "121", "121", "121", "121", "121", "121", "121", "121", 
+      "121", "121", "121", "121"},
+     {"11", "11", "11", "11", "11", "55", "55", "55", "55", "55", "55", "55", 
+      "55", "55", "55", "55", "55", "55", "55", "55", "55", "55", "55", "55", 
+      "55", "55", "55", "55", "55", "121", "121", "121", "121", "121", "121", 
+      "121", "121", "121", "121", "121", "121", "121", "121", "121", "121", 
+      "121", "121", "121", "121"},
+     {"11", "11", "11", "11", "11", "55", "55", "55", "55", "55", "55", "55", 
+      "55", "55", "55", "55", "55", "55", "55", "55", "55", "55", "55", "55", 
+      "55", "55", "55", "55", "55", "121", "121", "121", "121", "121", "121", 
+      "121", "121", "121", "121", "121", "121", "121", "121", "121", "121", 
+      "121", "121", "121", "121"},
+     {"11", "11", "11", "11", "11", "55", "55", "55", "55", "55", "55", "55", 
+      "55", "55", "55", "55", "55", "55", "55", "55", "55", "55", "55", "55", 
+      "55", "55", "55", "55", "55", "121", "121", "121", "121", "121", "121", 
+      "121", "121", "121", "121", "121", "121", "121", "121", "121", "121", 
+      "121", "121", "121", "121"},
+     {"11", "11", "11", "11", "11", "55", "55", "55", "55", "55", "55", "55", 
+      "55", "55", "55", "55", "55", "55", "55", "55", "55", "55", "55", "55", 
+      "55", "55", "55", "55", "55", "121", "121", "121", "121", "121", "121", 
+      "121", "121", "121", "121", "121", "121", "121", "121", "121", "121", 
+      "121", "121", "121", "121"},
+     {"11", "11", "11", "11", "11", "55", "55", "55", "55", "55", "55", "55", 
+      "55", "55", "55", "55", "55", "55", "55", "55", "55", "55", "55", "55", 
+      "55", "55", "55", "55", "55", "121", "121", "121", "121", "121", "121", 
+      "121", "121", "121", "121", "121", "121", "121", "121", "121", "121", 
+      "121", "121", "121", "121"},
+     {"11", "11", "11", "11", "11", "55", "55", "55", "55", "55", "55", "55", 
+      "55", "55", "55", "55", "55", "55", "55", "55", "55", "55", "55", "55", 
+      "55", "55", "55", "55", "55", "121", "121", "121", "121", "121", "121", 
+      "121", "121", "121", "121", "121", "121", "121", "121", "121", "121", 
+      "121", "121", "121", "121"},
+     {"11", "11", "11", "11", "11", "55", "55", "55", "55", "55", "55", "55", 
+      "55", "55", "55", "55", "55", "55", "55", "55", "55", "55", "55", "55", 
+      "55", "55", "55", "55", "55", "121", "121", "121", "121", "121", "121", 
+      "121", "121", "121", "121", "121", "121", "121", "121", "121", "121", 
+      "121", "121", "121", "121"},
+     {"11", "11", "11", "11", "11", "55", "55", "55", "55", "55", "55", "55", 
+      "55", "55", "55", "55", "55", "55", "55", "55", "55", "55", "55", "55", 
+      "55", "55", "55", "55", "55", "121", "121", "121", "121", "121", "121", 
+      "121", "121", "121", "121", "121", "121", "121", "121", "121", "121", 
+      "121", "121", "121", "121"}
+    },
+    GridBoxAlignment->{
+     "Columns" -> {{Center}}, "ColumnsIndexed" -> {}, "Rows" -> {{Baseline}}, 
+      "RowsIndexed" -> {}},
+    GridBoxSpacings->{"Columns" -> {
+        Offset[0.27999999999999997`], {
+         Offset[0.7]}, 
+        Offset[0.27999999999999997`]}, "ColumnsIndexed" -> {}, "Rows" -> {
+        Offset[0.2], {
+         Offset[0.4]}, 
+        Offset[0.2]}, "RowsIndexed" -> {}}], "\[NoBreak]", ")"}], 
+  TraditionalForm]], "Output",
+ CellChangeTimes->{
+  3.737342787079179*^9},ExpressionUUID->"19dda9dc-7948-413c-9ed8-\
+f2b4c38e35cc"]
 }, Open  ]]
 }, Open  ]]
 },
@@ -14195,45 +14928,79 @@ CellTagsIndex->{}
 (*NotebookFileOutline
 Notebook[{
 Cell[CellGroupData[{
-Cell[580, 22, 164, 3, 67, "Section",ExpressionUUID->"94c53f4c-b8cf-4259-b849-a1e83f07b85b"],
-Cell[747, 27, 769, 16, 94, "Input",ExpressionUUID->"95452391-75df-4be2-8a59-25fa6dc1a8fb"]
+Cell[580, 22, 209, 4, 67, "Section",ExpressionUUID->"94c53f4c-b8cf-4259-b849-a1e83f07b85b"],
+Cell[792, 28, 769, 16, 94, "Input",ExpressionUUID->"95452391-75df-4be2-8a59-25fa6dc1a8fb"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[1553, 48, 301, 4, 67, "Section",ExpressionUUID->"b0fcb1ff-ea00-47de-bd5f-bcc49554c854"],
+Cell[1598, 49, 301, 4, 67, "Section",ExpressionUUID->"b0fcb1ff-ea00-47de-bd5f-bcc49554c854"],
 Cell[CellGroupData[{
-Cell[1879, 56, 2105, 59, 259, "Subsubsection",ExpressionUUID->"9089d3f4-a5c7-47d0-8e49-564591e6023e"],
+Cell[1924, 57, 447, 8, 108, "Subsection",ExpressionUUID->"9089d3f4-a5c7-47d0-8e49-564591e6023e"],
 Cell[CellGroupData[{
-Cell[4009, 119, 785, 21, 73, "Input",ExpressionUUID->"f083c3c3-97b8-4e3d-80b5-471de23c2f34"],
-Cell[4797, 142, 205, 4, 30, "Output",ExpressionUUID->"1a234364-4bed-4677-b3c6-42f0263e74eb"],
+Cell[2396, 69, 1237, 37, 109, "Subsubsection",ExpressionUUID->"85452a25-fa8b-40cf-ab17-7a9a95c944ea"],
 Cell[CellGroupData[{
-Cell[5027, 150, 293, 6, 20, "Print",ExpressionUUID->"e9b7bf1a-a36c-4a9c-a04d-b833eb7ff3e3"],
-Cell[5323, 158, 593, 14, 20, "Print",ExpressionUUID->"d1d46996-7838-43cb-94d1-d203f845faeb"],
-Cell[5919, 174, 536, 13, 20, "Print",ExpressionUUID->"03941885-9a8f-4dda-9887-9b89aa2c034f"],
-Cell[6458, 189, 656, 15, 20, "Print",ExpressionUUID->"e19c8ab0-48a8-4ab7-b550-8e773fec2ec8"],
-Cell[7117, 206, 2658, 56, 20, "Print",ExpressionUUID->"800dd4c5-9091-4ff9-9c1f-886130d628c9"],
-Cell[9778, 264, 511, 11, 20, "Print",ExpressionUUID->"958007b3-f3ee-4760-af9b-148f096e81e5"],
-Cell[10292, 277, 661, 14, 20, "Print",ExpressionUUID->"81188514-26f1-4550-a25d-0445ee10f19c"]
+Cell[3658, 110, 785, 21, 73, "Input",ExpressionUUID->"f083c3c3-97b8-4e3d-80b5-471de23c2f34"],
+Cell[4446, 133, 158, 4, 30, "Output",ExpressionUUID->"5aabfd39-bd2b-4b91-ab8c-875aee6edfbe"],
+Cell[CellGroupData[{
+Cell[4629, 141, 224, 5, 20, "Print",ExpressionUUID->"171c93d6-eb30-4467-89e7-a8be8565e51b"],
+Cell[4856, 148, 520, 13, 20, "Print",ExpressionUUID->"55975061-8b14-4d2e-a36d-58da6906ac90"],
+Cell[5379, 163, 465, 12, 20, "Print",ExpressionUUID->"81aacb33-b8c8-4e47-94e2-01cfb75c8245"],
+Cell[5847, 177, 583, 14, 20, "Print",ExpressionUUID->"3a33e32d-8bda-4e99-9dbd-595fab5a84db"],
+Cell[6433, 193, 318, 8, 20, "Print",ExpressionUUID->"b90b15a1-f1e2-4fe5-a82c-b2e05fe2f974"],
+Cell[6754, 203, 438, 10, 20, "Print",ExpressionUUID->"bda0d4dd-ded5-47cd-856e-d752030e5ca5"],
+Cell[7195, 215, 618, 14, 20, "Print",ExpressionUUID->"0012e713-1fec-4e92-b47d-f373e7ae57a2"]
 }, Open  ]],
-Cell[10968, 294, 7098, 190, 138, "Output",ExpressionUUID->"b5d94ddb-1f36-41eb-91bd-0b4b3ab4a217"],
+Cell[7828, 232, 7051, 190, 138, "Output",ExpressionUUID->"f3c12e7b-92d0-4ae0-97bd-49cfaba552ec"],
 Cell[CellGroupData[{
-Cell[18091, 488, 293, 6, 20, "Print",ExpressionUUID->"5ef7e999-c220-4474-b52a-1d77a870d0a3"],
-Cell[18387, 496, 622, 15, 20, "Print",ExpressionUUID->"b014d530-12ba-4173-9c38-7c807d3d98fa"],
-Cell[19012, 513, 536, 13, 20, "Print",ExpressionUUID->"c4cf8039-f053-4256-8868-30847067492e"],
-Cell[19551, 528, 654, 15, 20, "Print",ExpressionUUID->"4d6ff591-56a8-4fbd-a42a-7e9b8562d3f4"],
-Cell[20208, 545, 2657, 56, 20, "Print",ExpressionUUID->"9d73bcb2-6f67-42f1-8bea-cd037eebfa2f"],
-Cell[22868, 603, 506, 10, 20, "Print",ExpressionUUID->"750d85e3-1ec3-40e9-9234-68a32b5fcb78"],
-Cell[23377, 615, 498, 11, 20, "Print",ExpressionUUID->"a4c57bf6-c5b7-42ce-882b-2ce94621c367"],
-Cell[23878, 628, 682, 15, 20, "Print",ExpressionUUID->"a53971d3-11e0-43ed-98ae-d1045c622a6f"]
+Cell[14904, 426, 224, 5, 20, "Print",ExpressionUUID->"d5fd484c-a87d-4a2b-9ab2-adc22a11be10"],
+Cell[15131, 433, 553, 14, 20, "Print",ExpressionUUID->"aaa84dd3-ffcd-4e7d-9f31-60c63c730aa9"],
+Cell[15687, 449, 465, 12, 20, "Print",ExpressionUUID->"fcdec7ac-4dfd-4490-8f28-ae245ebccd8c"],
+Cell[16155, 463, 583, 14, 20, "Print",ExpressionUUID->"5a2b996c-084c-433a-972f-1f6f308e2007"],
+Cell[16741, 479, 2544, 56, 20, "Print",ExpressionUUID->"64731764-9e2e-46a7-a9ab-6eb6c062373e"],
+Cell[19288, 537, 438, 10, 20, "Print",ExpressionUUID->"e8a424af-3f84-4e26-93e6-3a2fbcefa8ba"],
+Cell[19729, 549, 422, 9, 20, "Print",ExpressionUUID->"d9d032ad-2ddf-4b1c-9bca-2f998b06a466"],
+Cell[20154, 560, 614, 14, 20, "Print",ExpressionUUID->"dbc863cf-857f-4e67-8b92-53a9f6783291"]
 }, Open  ]],
-Cell[24575, 646, 521970, 13417, 1372, "Output",ExpressionUUID->"2950d390-cd37-4158-8d19-3c8eca5c39c3"]
+Cell[20783, 577, 521923, 13417, 1372, "Output",ExpressionUUID->"20f6105b-7041-49eb-8dd8-b112e792008c"]
+}, Open  ]]
 }, Open  ]]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[546594, 14069, 1120, 35, 116, "Subsection",ExpressionUUID->"020285bf-c435-4e30-a678-69c43046a264"],
+Cell[542767, 14001, 1037, 31, 115, "Subsection",ExpressionUUID->"020285bf-c435-4e30-a678-69c43046a264"],
 Cell[CellGroupData[{
-Cell[547739, 14108, 2157, 55, 159, "Input",ExpressionUUID->"6fcc254c-7ef1-4d74-a408-13a01bc1b050"],
-Cell[549899, 14165, 478, 9, 30, "Output",ExpressionUUID->"a05077bc-2f16-45a2-8d36-01c1792cb36b"]
+Cell[543829, 14036, 1771, 42, 94, "Input",ExpressionUUID->"6fcc254c-7ef1-4d74-a408-13a01bc1b050"],
+Cell[545603, 14080, 211, 6, 30, "Output",ExpressionUUID->"dffc36eb-7157-4775-b88d-a94173b58db0"]
 }, Open  ]]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[545875, 14093, 230, 4, 67, "Section",ExpressionUUID->"cc4fc35b-400c-4386-ad61-bb0832e6efb4"],
+Cell[CellGroupData[{
+Cell[546130, 14101, 450, 12, 30, "Input",ExpressionUUID->"579e2f9f-7e01-451c-a14e-130a16dfdf61"],
+Cell[CellGroupData[{
+Cell[546605, 14117, 222, 5, 20, "Print",ExpressionUUID->"ad952508-cc47-4c50-9600-2cd3c140b90f"],
+Cell[546830, 14124, 576, 15, 20, "Print",ExpressionUUID->"40f3a8ec-97f2-4feb-a0cf-8bfa1b5a5207"],
+Cell[547409, 14141, 465, 12, 20, "Print",ExpressionUUID->"a0382868-724b-4b16-a59c-b2efa16ac52c"],
+Cell[547877, 14155, 583, 14, 20, "Print",ExpressionUUID->"1df56af9-8674-422d-b29a-589f6c979ed3"],
+Cell[548463, 14171, 2544, 56, 20, "Print",ExpressionUUID->"9e035b10-283c-4d7b-a585-4dfac5a096be"],
+Cell[551010, 14229, 438, 10, 20, "Print",ExpressionUUID->"43eda943-2a0e-4310-8999-abae53c257ad"],
+Cell[551451, 14241, 427, 10, 20, "Print",ExpressionUUID->"4d47fe7e-cb86-42ed-9f74-4c9e0cdac21e"],
+Cell[551881, 14253, 614, 14, 20, "Print",ExpressionUUID->"7e83b1cd-1b0c-4f7c-8c5e-5867a34751fd"]
+}, Open  ]],
+Cell[552510, 14270, 16675, 233, 848, "Output",ExpressionUUID->"fcad5361-9af8-4a2b-bde7-685b22e6c483"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[569222, 14508, 360, 12, 30, "Input",ExpressionUUID->"0be62d98-a834-451f-8bed-f5e9052f569b"],
+Cell[CellGroupData[{
+Cell[569607, 14524, 219, 4, 20, "Print",ExpressionUUID->"727bf050-f9c6-4ee8-b23c-8d9274659833"],
+Cell[569829, 14530, 573, 14, 20, "Print",ExpressionUUID->"68b6f19a-3a93-4b60-8c44-0a35046f2c57"],
+Cell[570405, 14546, 467, 12, 20, "Print",ExpressionUUID->"956d7d4c-5288-4b66-b540-e19b37c4a959"],
+Cell[570875, 14560, 585, 14, 20, "Print",ExpressionUUID->"5660a57a-86b5-4eab-890f-853edb35a63a"],
+Cell[571463, 14576, 2544, 56, 20, "Print",ExpressionUUID->"6b076f0f-f6a5-4700-ac4d-c2e9e8e6177a"],
+Cell[574010, 14634, 440, 10, 20, "Print",ExpressionUUID->"d076936e-f379-4474-8205-496f08af5aea"],
+Cell[574453, 14646, 425, 10, 20, "Print",ExpressionUUID->"0c8c9876-5786-4827-b34f-05a85887b692"],
+Cell[574881, 14658, 616, 14, 20, "Print",ExpressionUUID->"e87c9e06-539a-4a77-9cde-c0602aa130ab"]
+}, Open  ]],
+Cell[575512, 14675, 16675, 233, 848, "Output",ExpressionUUID->"19dda9dc-7948-413c-9ed8-f2b4c38e35cc"]
 }, Open  ]]
 }, Open  ]]
 }
