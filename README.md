@@ -5,6 +5,7 @@ Compute arbitrary link invariants up to three strands for <a href="http://www.co
 
 Mathematica packages containing data on <a href="https://www.codecogs.com/eqnedit.php?latex=G=\mathbb&space;Z_{11}&space;\rtimes&space;\mathbb&space;Z_5" target="_blank"><img src="https://latex.codecogs.com/gif.latex?G=\mathbb&space;Z_{11}&space;\rtimes&space;\mathbb&space;Z_5" title="G=\mathbb Z_{11} \rtimes \mathbb Z_5" /></a> and <a href="http://www.codecogs.com/eqnedit.php?latex=\mathcal&space;Z(\textrm{Vec}_G^{\omega^u})" target="_blank"><img src="http://latex.codecogs.com/gif.latex?\mathcal&space;Z(\textrm{Vec}_G^{\omega^u})" title="\mathcal Z(\textrm{Vec}_G^{\omega^u})" /></a> are included, as well as a sample notebook that computes the S and T matrices and checks that it satisfies the modular relations.
 
+To use try:
 ```python
 SetDirectory[NotebookDirectory[]];
 << "Z11xZ5-data.m"
@@ -17,8 +18,7 @@ numStrands = 2;
 
 dT1 = ComputeLinkInvariant[u, {braidword, numStrands}];
 ```
-
-The above computes a twisted unknot for the u=1 category. To compute the braid closure <a href="http://www.codecogs.com/eqnedit.php?latex=\widehat{\sigma_2^{-3}&space;\sigma_1&space;\sigma_2^{2}}" target="_blank"><img src="http://latex.codecogs.com/gif.latex?\widehat{\sigma_2^{-3}&space;\sigma_1&space;\sigma_2^{2}}" title="\widehat{\sigma_2^{-3} \sigma_1 \sigma_2^{2}}" /></a> on three strands for u=4 do:
+The above computes a twisted unknot for the u=1 category. For example, to compute the braid closure <a href="http://www.codecogs.com/eqnedit.php?latex=\widehat{\sigma_2^{-3}&space;\sigma_1&space;\sigma_2^{2}}" target="_blank"><img src="http://latex.codecogs.com/gif.latex?\widehat{\sigma_2^{-3}&space;\sigma_1&space;\sigma_2^{2}}" title="\widehat{\sigma_2^{-3} \sigma_1 \sigma_2^{2}}" /></a> on three strands for u=4 do:
 ```python
 ComputeLinkInvariant[4, {{2,2,1,-2,-2,-2}, 3}]
 ```

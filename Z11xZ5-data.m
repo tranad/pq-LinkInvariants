@@ -1,5 +1,5 @@
 (* 
-    Group data on Z11 \rtimes Z4
+    Group data on Z11 \rtimes Z5
     -Alan Tran
 *)
 
